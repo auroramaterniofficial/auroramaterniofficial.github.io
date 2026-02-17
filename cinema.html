@@ -5,106 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Cinema - Aurora Materni</title>
-    <meta name="description" content="Filmografia e scene tratte dai set di Aurora Materni.">
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
-        
         h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.2rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
 
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px; 
-            width: 90%;
-            max-width: 1100px;
-            padding-bottom: 80px;
-        }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 80px; }
+        .gallery-item { position: relative; overflow: hidden; border: 1px solid #333; aspect-ratio: 2/3; background-color: #000; cursor: pointer; }
 
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #333;
-            aspect-ratio: 2/3; 
-            background-color: #000;
-        }
-
-        .video-local {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-            transition: 0.5s ease;
-        }
-        .gallery-item:hover .video-local { filter: grayscale(0%); }
+        .video-local { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; }
+        .gallery-item:hover .video-local { filter: grayscale(0%); transform: scale(1.05); }
 
         .gallery-item iframe { width: 100%; height: 100%; border: none; display: block; }
-
-        .gallery-item img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-            transition: 0.5s ease;
-            cursor: pointer;
-            display: block;
-        }
-
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; display: block; }
         .gallery-item img:hover { filter: grayscale(0%); transform: scale(1.05); }
 
-        /* LIGHTBOX (PAGINA INTERA) */
+        /* LIGHTBOX UNIVERSALE */
         #lightbox {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.98);
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            cursor: zoom-out;
+            display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.98); justify-content: center; align-items: center; flex-direction: column;
         }
 
-        #lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border: 1px solid #d4af37;
-            box-shadow: 0 0 50px #000;
-            cursor: default;
+        #lightbox img, #lightbox video {
+            max-width: 90%; max-height: 80%; border: 1px solid #d4af37; box-shadow: 0 0 50px #000; display: none;
         }
 
-        .close-lightbox {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #d4af37;
-            font-size: 50px;
-            font-weight: 300;
-            cursor: pointer;
-            line-height: 1;
-            transition: 0.3s;
-        }
-        
-        .close-lightbox:hover { transform: scale(1.2); }
-
-        #lightbox-caption { 
-            margin-top: 25px; 
-            color: #d4af37; 
-            font-size: 0.9rem; 
-            letter-spacing: 3px; 
-            text-transform: uppercase; 
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-        }
+        .close-lightbox { position: absolute; top: 20px; right: 30px; color: #d4af37; font-size: 50px; cursor: pointer; z-index: 10000; }
+        #lightbox-caption { margin-top: 25px; color: #d4af37; font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; text-align: center; }
 
         @media (max-width: 800px) {
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .gallery-item img, .video-local { filter: grayscale(0%); }
-            .close-lightbox { top: 15px; right: 20px; font-size: 40px; }
         }
     </style>
 </head>
@@ -115,59 +49,80 @@
     
     <div class="gallery-grid">
         
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('backstage.mp4', 'Backstage sul Set', true)">
             <video class="video-local" muted loop playsinline autoplay>
                 <source src="backstage.mp4" type="video/mp4">
             </video>
         </div>
 
-        <div class="gallery-item">
-            <img src="scena1.jpg" alt="Set Nero a Metà 3" onclick="openLightbox('scena1.jpg', 'Set Nero a Metà 3')">
+        <div class="gallery-item" onclick="openLightbox('scena1.jpg', 'Set Nero a Metà 3', false)">
+            <img src="scena1.jpg" alt="Scena 1">
         </div>
 
-        <div class="gallery-item">
-            <img src="scena2.jpg" alt="Fiction Nero e Metà 3" onclick="openLightbox('scena2.jpg', 'Fiction Nero e Metà 3')">
+        <div class="gallery-item" onclick="openLightbox('scena2.jpg', 'Fiction Nero e Metà 3', false)">
+            <img src="scena2.jpg" alt="Scena 2">
         </div>
 
-        <div class="gallery-item">
-            <img src="scena3.jpg" alt="Fiction Nero a Metà 3" onclick="openLightbox('scena3.jpg', 'Fiction Nero a Metà 3')">
+        <div class="gallery-item" onclick="openLightbox('scena3.jpg', 'Fiction Nero a Metà 3', false)">
+            <img src="scena3.jpg" alt="Scena 3">
         </div>
 
         <div class="gallery-item">
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Showreel" allowfullscreen></iframe>
         </div>
 
-        <div class="gallery-item">
-            <img src="scena4.jpg" alt="Sempre al tuo fianco" onclick="openLightbox('scena4.jpg', 'Sempre al tuo fianco')">
+        <div class="gallery-item" onclick="openLightbox('scena4.jpg', 'Sempre al tuo fianco', false)">
+            <img src="scena4.jpg" alt="Scena 4">
         </div>
 
-        <div class="gallery-item">
-            <img src="scena5.jpg" alt="Portfolio Cinema" onclick="openLightbox('scena5.jpg', 'Portfolio Cinema')">
+        <div class="gallery-item" onclick="openLightbox('scena5.jpg', 'Portfolio Cinema', false)">
+            <img src="scena5.jpg" alt="Scena 5">
         </div>
 
-        <div class="gallery-item">
-            <img src="scena6.jpg" alt="Scena Cinema" onclick="openLightbox('scena6.jpg', 'Scena Cinema')">
+        <div class="gallery-item" onclick="openLightbox('scena6.jpg', 'Scena Cinema', false)">
+            <img src="scena6.jpg" alt="Scena 6">
         </div>
 
     </div>
 
-    <div id="lightbox" onclick="closeLightbox()">
+    <div id="lightbox">
         <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
         <img id="lightbox-img" src="">
+        <video id="lightbox-video" controls loop playsinline></video>
         <div id="lightbox-caption"></div>
     </div>
 
     <script>
-        function openLightbox(src, text) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox-caption').innerHTML = text;
-            document.getElementById('lightbox').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; 
+        function openLightbox(src, text, isVideo) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const video = document.getElementById('lightbox-video');
+            const caption = document.getElementById('lightbox-caption');
+
+            caption.innerHTML = text;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            if (isVideo) {
+                img.style.display = 'none';
+                video.style.display = 'block';
+                video.src = src;
+                video.play();
+            } else {
+                video.style.display = 'none';
+                video.pause();
+                img.style.display = 'block';
+                img.src = src;
+            }
         }
 
         function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-            document.body.style.overflow = 'auto'; 
+            const lightbox = document.getElementById('lightbox');
+            const video = document.getElementById('lightbox-video');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            video.pause();
+            video.src = "";
         }
     </script>
 
