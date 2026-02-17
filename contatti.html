@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Aurora Materni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            margin: 0; 
+            background-color: #1a1a1a; 
+            color: #f4f1ea; 
+            font-family: 'Montserrat', sans-serif; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .back-home { 
+            position: absolute; 
+            top: 50px; 
+            text-decoration: none; 
+            color: #d4af37; 
+            font-size: 0.8rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+        
+        .back-home:hover { border-bottom: 1px solid #d4af37; }
+        
+        .contact-container { 
+            text-align: center; 
+            border: 1px solid #d4af37; 
+            padding: 60px; 
+            max-width: 500px; 
+            margin: 20px;
+        }
+
+        h2 { 
+            font-family: 'Playfair Display', serif; 
+            font-style: italic; 
+            font-size: 2.5rem; 
+            margin-bottom: 30px; 
+            font-weight: 400;
+        }
+        
+        .email-link { 
+            color: #f4f1ea; 
+            text-decoration: none; 
+            font-size: 1.2rem; 
+            letter-spacing: 1px; 
+            transition: 0.3s; 
+            display: block; 
+        }
+
+        .email-link:hover { color: #d4af37; }
+        
+        .divider-small {
+            width: 30px; 
+            height: 1px; 
+            background: #d4af37; 
+            margin: 20px auto;
+        }
+
+        .info { 
+            font-size: 0.8rem; 
+            color: #888; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-top: 40px; 
+        }
+
+        @media (max-width: 600px) {
+            .contact-container { padding: 40px 20px; }
+            h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-home">← Torna alla Home</a>
+    
+    <div class="contact-container">
+        <h2>Contatti</h2>
+        <p style="margin-bottom: 30px; opacity: 0.8;">Per proposte lavorative e collaborazioni:</p>
+        
+        <a href="mailto:mauro.materni@gmail.com" class="email-link">mauro.materni@gmail.com</a>
+        
+        <div class="divider-small"></div>
+        
+        <a href="tel:+393514508439" class="email-link" style="font-size: 1.1rem;">+39 351 4508439</a>
+        
+        <div class="info">Disponibile per progetti nazionali e internazionali</div>
+    </div>
+
+</body>
+</html>

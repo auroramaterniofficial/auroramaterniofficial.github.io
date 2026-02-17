@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Aurora Materni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
+        
+        .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .back-home:hover { border-bottom: 1px solid #d4af37; }
+        
+        h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
+
+        .cv-container { width: 90%; max-width: 850px; padding-bottom: 80px; }
+
+        .cv-section { margin-bottom: 45px; border-left: 1px solid rgba(212, 175, 55, 0.3); padding-left: 25px; }
+        .cv-section h3 { font-family: 'Playfair Display', serif; color: #d4af37; text-transform: uppercase; letter-spacing: 2px; font-size: 1.2rem; margin-bottom: 20px; }
+
+        .cv-item { margin-bottom: 15px; display: flex; justify-content: space-between; border-bottom: 1px solid #222; padding-bottom: 8px; align-items: baseline; }
+        .cv-item span.year { color: #d4af37; font-weight: 600; min-width: 80px; font-size: 0.9rem; }
+        .cv-item span.role { flex-grow: 1; margin-left: 10px; color: #fff; font-weight: 400; }
+        .cv-item span.details { font-style: italic; color: #aaa; text-align: right; font-size: 0.9rem; }
+
+        /* Griglia dati estetici */
+        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 40px; background: #222; padding: 20px; border-radius: 2px; font-size: 0.85rem; }
+        .info-grid div b { color: #d4af37; text-transform: uppercase; font-size: 0.75rem; display: block; margin-bottom: 3px; }
+
+        .download-btn {
+            display: inline-block; margin-top: 20px; padding: 15px 30px;
+            border: 1px solid #d4af37; color: #d4af37; text-decoration: none;
+            text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;
+            transition: 0.3s;
+        }
+        .download-btn:hover { background: #d4af37; color: #1a1a1a; }
+
+        @media (max-width: 700px) {
+            .cv-item { flex-direction: column; border-bottom: 1px solid #333; padding-bottom: 12px; }
+            .cv-item span.details { text-align: left; margin-left: 0; margin-top: 5px; }
+            .info-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-home">← Torna alla Home</a>
+    <h2>Curriculum Vitae</h2>
+
+    <div class="cv-container">
+
+        <div class="info-grid">
+            <div><b>Altezza</b> 157 cm</div>
+            <div><b>Occhi</b> Marroni</div>
+            <div><b>Capelli</b> Ricci Castani</div>
+            <div><b>Taglia</b> XS (12 anni)</div>
+            <div><b>Scarpe</b> 35</div>
+            <div><b>Dialetti</b> Romano</div>
+        </div>
+        
+        <div class="cv-section">
+            <h3>Fiction & Cinema</h3>
+            <div class="cv-item">
+                <span class="year">2022</span>
+                <span class="role">Sempre al tuo fianco (Protezione Civile)</span>
+                <span class="details">Ruolo: Sara Bambina - Regia M. Pontecorvo</span>
+            </div>
+            <div class="cv-item">
+                <span class="year">2021</span>
+                <span class="role">Nero a Metà 3 (Ep. 9, 10, 11, 12)</span>
+                <span class="details">Ruolo: Myriam - Regia E. Rosati e C. Amendola</span>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3>Moda & Progetti Speciali</h3>
+            <div class="cv-item">
+                <span class="year">2024</span>
+                <span class="role">Roma Codex - Albert Watson</span>
+                <span class="details">Modella per Libro Fotografico</span>
+            </div>
+            <div class="cv-item">
+                <span class="year">2021</span>
+                <span class="role">Sfilata Laura Biagiotti</span>
+                <span class="details">Modella - Museo MAXXI, Roma</span>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h3>Formazione</h3>
+            <div class="cv-item">
+                <span class="year">2020 - 2026</span>
+                <span class="role">Scuola di Teatro "Teatro a Vista"</span>
+                <span class="details">Docente: Francesca Rizzi (Roma)</span>
+            </div>
+            <div class="cv-item">
+                <span class="year">2023</span>
+                <span class="role">Workshop Recitazione Cinematografica</span>
+                <span class="details">Young Academy (G. Marrone, P. De Santis, D. Petrucci)</span>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="Curriculum Aurora MATERNI.pdf" class="download-btn" target="_blank">Scarica CV (PDF)</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
