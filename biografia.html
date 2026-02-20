@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografia - Aurora Materni</title>
+    <title>Biografia - Aurora Materni Official</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
         
-        .bio-section { padding: 60px 20px; max-width: 650px; margin: 0 auto; line-height: 1.7; }
+        .bio-section { padding: 60px 20px; max-width: 700px; margin: 0 auto; line-height: 1.8; }
         
-        /* Modifiche alla Citazione per dare più aria */
         .quote { 
             font-family: 'Playfair Display', serif; 
             font-style: italic; 
-            font-size: 1.8rem; /* Leggermente più grande */
+            font-size: 1.8rem; 
             color: #d4af37; 
             text-align: center; 
-            margin: 60px 0 80px 0; /* Più spazio sopra e soprattutto sotto */
-            line-height: 1.6; /* Più interlinea */
-            letter-spacing: 1.5px; /* Più spazio tra le lettere */
+            margin: 60px 0 80px 0; 
+            line-height: 1.6; 
+            letter-spacing: 1.5px; 
             display: block;
             opacity: 0.9;
         }
 
-        .bio-text { font-size: 1rem; color: #e0e0e0; text-align: justify; }
+        .bio-text p { 
+            font-size: 1.05rem; 
+            color: #e0e0e0; 
+            text-align: justify; 
+            margin-bottom: 30px; 
+        }
 
         .highlight-name {
             color: #d4af37;
             font-weight: 400;
-            letter-spacing: 1px;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-            padding-bottom: 2px;
         }
 
-        .bio-text p::first-letter {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            float: left;
-            margin-right: 10px;
-            line-height: 1;
-            color: #d4af37;
+        /* Paragrafo Watson e Biagiotti con leggero risalto visivo */
+        .featured-para {
+            border-left: 2px solid #d4af37; 
+            padding-left: 25px;
+            font-style: italic;
+            color: #fff !important;
         }
 
         .social-link { display: inline-block; margin-top: 50px; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: 0.3s; }
@@ -50,7 +50,7 @@
 
         @media (max-width: 600px) {
             .bio-section { padding: 30px 15px; }
-            .bio-text { text-align: left; }
+            .bio-text p { text-align: left; }
             .quote { font-size: 1.4rem; margin: 40px 0 50px 0; }
         }
     </style>
@@ -64,25 +64,29 @@
         
         <div class="bio-text">
             <p>
-                Attratta dal cinema fin dalla tenera età, Aurora Materni ha trasformato la sua vocazione in un percorso professionale. Dalla continua formazione teatrale è approdata con naturalezza davanti all'obiettivo, cercando sempre la verità emotiva in ogni fotogramma.
-            </p>
-
-            <p style="font-size: 1.2rem; color: #fff; margin: 40px 0; font-style: italic; border-left: 2px solid #d4af37; padding-left: 20px;">
-                Il suo profilo artistico è stato consacrato dalla collaborazione con il leggendario fotografo internazionale <span class="highlight-name">Albert Watson</span> per il progetto "Roma Codex", un'esperienza che ha definito la sua cifra stilistica tra estetica classica e sensibilità moderna.
+                Il percorso artistico di <span class="highlight-name">Aurora Materni</span> nasce da una naturale inclinazione per l'espressività e il racconto, coltivata con dedizione fin dai primi anni di formazione. Dal 2020, Aurora studia con continuità presso la scuola <span class="highlight-name">"Teatro a Vista"</span> di Roma, sotto la guida di Francesca Rizzi, dove ha affinato le tecniche di recitazione e l'uso della voce.
             </p>
 
             <p>
-                Specializzata in ruoli drammatici di forte introspezione, come dimostrato nelle interpretazioni televisive, Aurora continua a esplorare nuovi linguaggi cinematografici unendo la disciplina del set a una costante ricerca di autenticità.
+                Nonostante la giovane età, la sua carriera vanta già esperienze di rilievo nel panorama cinematografico e televisivo nazionale. Il grande pubblico l'ha conosciuta nella fiction Rai <span class="highlight-name">"Nero a Metà 3"</span>, dove ha interpretato il ruolo di Myriam sotto la regia di Claudio Amendola ed Enrico Rosati. Successivamente, ha preso parte alla serie <span class="highlight-name">"Sempre al tuo fianco"</span>, diretta da Marco Pontecorvo, interpretando il ruolo di Sara da bambina.
+            </p>
+
+            <p class="featured-para">
+                Oltre alla recitazione, Aurora ha dimostrato una straordinaria versatilità nel mondo dell'arte e della moda. È stata scelta dal leggendario fotografo <span class="highlight-name">Albert Watson</span> come modella per il prestigioso progetto editoriale "Roma Codex". Il suo debutto sulle passerelle è avvenuto nel 2021, sfilando per <span class="highlight-name">Laura Biagiotti</span> nella suggestiva cornice del Museo MAXXI di Roma.
+            </p>
+
+            <p>
+                Con un bagaglio che spazia dal set cinematografico alla fotografia d'autore, Aurora continua il suo percorso di studio con passione, pronta a nuove sfide nel mondo dello spettacolo.
             </p>
         </div>
 
         <div style="text-align: center;">
-            <a href="https://www.instagram.com/aurora.materni.official" target="_blank" class="social-link">
-                Instagram Profile
+            <a href="https://www.instagram.com/aurora.materniofficial" target="_blank" class="social-link">
+                Segui @aurora.materniofficial
             </a>
         </div>
     </section>
 
 </body>
-
 </html>
+
