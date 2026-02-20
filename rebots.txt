@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://auroramaterniofficial.github.io/sitemap.xml
