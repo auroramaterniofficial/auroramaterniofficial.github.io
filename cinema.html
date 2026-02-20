@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema - Aurora Materni | Attrice Nero a Metà 3</title>
-
     <meta name="description" content="Portfolio cinematografico di Aurora Materni. Clip e scene tratte dalle fiction Rai: Nero a Metà 3 con Claudio Amendola e Sempre al tuo fianco con Marco Pontecorvo.">
     <meta name="keywords" content="Aurora Materni, Attrice, Nero a Metà 3, Myriam, Claudio Amendola, Sempre al tuo fianco, Marco Pontecorvo, Rai 1, Cinema">
 
@@ -16,8 +15,9 @@
       "description": "Aurora Materni interpreta Myriam nella fiction Rai Nero a Metà 3, regia di Claudio Amendola.",
       "thumbnailUrl": "https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg",
       "uploadDate": "2024-05-20",
-      "contentUrl": "https://youtu.be/_4TXyyChRIo",
+      "contentUrl": "https://www.youtube.com/watch?v=_4TXyyChRIo",
       "embedUrl": "https://www.youtube.com/embed/_4TXyyChRIo",
+      "interactionCount": "120",
       "actor": {
         "@type": "Person",
         "name": "Aurora Materni"
@@ -35,14 +35,10 @@
         .gallery-item { position: relative; overflow: hidden; border: 1px solid #333; aspect-ratio: 2/3; background-color: #000; cursor: pointer; }
         .video-local { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; }
         .gallery-item:hover .video-local { filter: grayscale(0%); transform: scale(1.05); }
-        .gallery-item iframe { width: 100%; height: 100%; border: none; display: block; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; display: block; }
         .gallery-item img:hover { filter: grayscale(0%); transform: scale(1.05); }
-        
-        /* Stile specifico per il contenitore YouTube nel lightbox */
         #yt-wrapper { width: 80%; aspect-ratio: 16/9; display: none; border: 1px solid #d4af37; box-shadow: 0 0 50px #000; }
         #yt-frame { width: 100%; height: 100%; border: none; }
-
         #lightbox { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.98); justify-content: center; align-items: center; flex-direction: column; }
         #lightbox img, #lightbox video { max-width: 90%; max-height: 80%; border: 1px solid #d4af37; box-shadow: 0 0 50px #000; display: none; }
         .close-lightbox { position: absolute; top: 20px; right: 30px; color: #d4af37; font-size: 50px; cursor: pointer; z-index: 10000; }
@@ -51,121 +47,95 @@
     </style>
 </head>
 <body>
-
     <a href="index.html" class="back-home">← Torna alla Home</a>
     <h2>Cinema</h2>
-    
     <div class="gallery-grid">
-        
-        <div class="gallery-item" onclick="openLightbox('backstage.mp4', 'Backstage sul Set: Aurora Materni in azione tra ciak e regia', true)">
-            <video class="video-local" muted loop playsinline autoplay>
-                <source src="backstage.mp4" type="video/mp4">
-            </video>
+        <div class="gallery-item" onclick="openLightbox('backstage.mp4', 'Backstage sul Set: Aurora Materni in azione', true)">
+            <video class="video-local" muted loop playsinline autoplay><source src="backstage.mp4" type="video/mp4"></video>
         </div>
-
         <div class="gallery-item" onclick="openLightbox('scena1.jpg', 'Sul set della fiction «Nero a Metà 3» - Rai 1', false)">
-            <img src="scena1.jpg" alt="Aurora Materni attrice Nero a Metà 3 serie TV Rai 1 casting">
+            <img src="scena1.jpg" alt="Aurora Materni attrice Nero a Metà 3">
         </div>
-
         <div class="gallery-item" onclick="openLightbox('scena2.jpg', 'Aurora Materni nel ruolo di Myriam con Claudio Amendola - Nero a Metà 3', false)">
-            <img src="scena2.jpg" alt="Aurora Materni personaggio Myriam Nero a Metà 3 fiction Rai">
+            <img src="scena2.jpg" alt="Aurora Materni Myriam">
         </div>
-
         <div class="gallery-item" onclick="openLightbox('scena3.jpg', 'Sul set della fiction «Nero a Metà 3»', false)">
-            <img src="scena3.jpg" alt="Aurora Materni attrice cinema casting minori riprese set">
+            <img src="scena3.jpg" alt="Aurora Materni Set">
         </div>
-
         <div class="gallery-item" onclick="openYT('https://www.youtube.com/embed/_4TXyyChRIo?autoplay=1&rel=0', 'Aurora Materni - Incontro Myriam - «Nero a Metà 3»')">
-            <img src="https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg" alt="Aurora Materni Video YouTube Nero a Metà 3">
+            <img src="https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg" alt="Aurora Materni Video Nero a Metà 3">
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #d4af37; font-size: 40px;">▶</div>
         </div>
-
-        <div class="gallery-item" onclick="openLightbox('scena4.jpg', 'Set della serie «Sempre al tuo fianco» - Regia di Marco Pontecorvo', false)">
-            <img src="scena4.jpg" alt="Aurora Materni Sempre al tuo fianco Rai 1 regia Marco Pontecorvo">
+        <div class="gallery-item" onclick="openLightbox('scena4.jpg', 'Set «Sempre al tuo fianco» - Regia di Marco Pontecorvo', false)">
+            <img src="scena4.jpg" alt="Aurora Materni Sempre al tuo fianco">
         </div>
-
-        <div class="gallery-item" onclick="openLightbox('scena5.jpg', 'Sempre al tuo fianco - Aurora Materni con l\'attore ed amico Marco Iannitello - Regia Marco Pontecorvo', false)">
-            <img src="scena5.jpg" alt="Aurora Materni con Marco Pontecorvo e Marco Iannitello">
+        <div class="gallery-item" onclick="openLightbox('scena5.jpg', 'Aurora Materni con Marco Iannitello', false)">
+            <img src="scena5.jpg" alt="Aurora Materni Marco Iannitello">
         </div>
-
-        <div class="gallery-item" onclick="openLightbox('scena6.jpg', 'Fiction Rai: Frame tratto dalla serie «Sempre al tuo fianco» - Stagione 1 Episodio 11', false)">
-            <img src="scena6.jpg" alt="Primo piano di Aurora Materni in una scena della serie TV Rai Sempre al tuo fianco">
+        <div class="gallery-item" onclick="openLightbox('scena6.jpg', 'Fiction Rai: Frame tratto dalla serie «Sempre al tuo fianco»', false)">
+            <img src="scena6.jpg" alt="Aurora Materni Rai 1">
         </div>
-
     </div>
-
     <div id="lightbox">
         <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
         <img id="lightbox-img" src="">
         <video id="lightbox-video" controls loop playsinline></video>
-        <div id="yt-wrapper">
-            <iframe id="yt-frame" src="" allow="autoplay; fullscreen"></iframe>
-        </div>
+        <div id="yt-wrapper"><iframe id="yt-frame" src="" allow="autoplay; fullscreen"></iframe></div>
         <div id="lightbox-caption"></div>
     </div>
-
     <script>
         function openLightbox(src, text, isVideo) {
-            const lightbox = document.getElementById('lightbox');
+            const lb = document.getElementById('lightbox');
             const img = document.getElementById('lightbox-img');
-            const video = document.getElementById('lightbox-video');
-            const ytWrapper = document.getElementById('yt-wrapper');
-            const caption = document.getElementById('lightbox-caption');
-
-            caption.innerHTML = text;
-            lightbox.style.display = 'flex';
+            const vid = document.getElementById('lightbox-video');
+            const wrap = document.getElementById('yt-wrapper');
+            const cap = document.getElementById('lightbox-caption');
+            cap.innerHTML = text;
+            lb.style.display = 'flex';
             document.body.style.overflow = 'hidden';
-            ytWrapper.style.display = 'none';
-
+            wrap.style.display = 'none';
             if (isVideo) {
                 img.style.display = 'none';
-                video.style.display = 'block';
-                video.src = src;
-                video.play();
+                vid.style.display = 'block';
+                vid.src = src;
+                vid.play();
             } else {
-                video.style.display = 'none';
-                video.pause();
+                vid.style.display = 'none';
+                vid.pause();
                 img.style.display = 'block';
                 img.src = src;
             }
         }
-
-        // Nuova funzione specifica per aprire il video YouTube nel lightbox
         function openYT(src, text) {
-            const lightbox = document.getElementById('lightbox');
+            const lb = document.getElementById('lightbox');
             const img = document.getElementById('lightbox-img');
-            const video = document.getElementById('lightbox-video');
-            const ytWrapper = document.getElementById('yt-wrapper');
-            const ytFrame = document.getElementById('yt-frame');
-            const caption = document.getElementById('lightbox-caption');
-
+            const vid = document.getElementById('lightbox-video');
+            const wrap = document.getElementById('yt-wrapper');
+            const frm = document.getElementById('yt-frame');
+            const cap = document.getElementById('lightbox-caption');
             img.style.display = 'none';
-            video.style.display = 'none';
-            video.pause();
-            
-            ytWrapper.style.display = 'block';
-            ytFrame.src = src;
-            caption.innerHTML = text;
-            
-            lightbox.style.display = 'flex';
+            vid.style.display = 'none';
+            vid.pause();
+            wrap.style.display = 'block';
+            frm.src = src;
+            cap.innerHTML = text;
+            lb.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }
-
         function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            const video = document.getElementById('lightbox-video');
-            const ytFrame = document.getElementById('yt-frame');
-            const ytWrapper = document.getElementById('yt-wrapper');
-            
-            lightbox.style.display = 'none';
+            const lb = document.getElementById('lightbox');
+            const vid = document.getElementById('lightbox-video');
+            const frm = document.getElementById('yt-frame');
+            const wrap = document.getElementById('yt-wrapper');
+            lb.style.display = 'none';
             document.body.style.overflow = 'auto';
-            video.pause();
-            video.src = "";
-            ytFrame.src = "";
-            ytWrapper.style.display = 'none';
+            vid.pause();
+            vid.src = "";
+            frm.src = "";
+            wrap.style.display = 'none';
         }
     </script>
-
 </body>
 </html>
+
 
