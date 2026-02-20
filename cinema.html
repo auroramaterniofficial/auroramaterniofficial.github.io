@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema - Aurora Materni</title>
+    <title>Cinema - Aurora Materni | Attrice Nero a Metà 3</title>
+
+    <meta name="description" content="Portfolio cinematografico di Aurora Materni. Clip e scene tratte dalle fiction Rai: Nero a Metà 3 con Claudio Amendola e Sempre al tuo fianco con Marco Pontecorvo.">
+    <meta name="keywords" content="Aurora Materni, Attrice, Nero a Metà 3, Myriam, Claudio Amendola, Sempre al tuo fianco, Marco Pontecorvo, Rai 1, Cinema">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Aurora Materni - Scena Nero a Metà 3",
+      "description": "Aurora Materni interpreta Myriam nella fiction Rai Nero a Metà 3, regia di Claudio Amendola.",
+      "thumbnailUrl": "https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg",
+      "uploadDate": "2024-05-20",
+      "contentUrl": "https://youtu.be/_4TXyyChRIo",
+      "embedUrl": "https://www.youtube.com/embed/_4TXyyChRIo",
+      "actor": {
+        "@type": "Person",
+        "name": "Aurora Materni"
+      }
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
@@ -50,64 +71,6 @@
         </div>
 
         <div class="gallery-item">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Showreel" allowfullscreen></iframe>
-        </div>
+            <iframe src
 
-        <div class="gallery-item" onclick="openLightbox('scena4.jpg', 'Set della serie «Sempre al tuo fianco» - Regia di Marco Pontecorvo', false)">
-            <img src="scena4.jpg" alt="Aurora Materni Sempre al tuo fianco Rai 1 regia Marco Pontecorvo">
-        </div>
-
-        <div class="gallery-item" onclick="openLightbox('scena5.jpg', 'Sempre al tuo fianco - Aurora Materni con l\'attore ed amico Marco Iannitello - Regia Marco Pontecorvo', false)">
-            <img src="scena5.jpg" alt="Aurora Materni con Marco Pontecorvo e Marco Iannitello">
-        </div>
-
-        <div class="gallery-item" onclick="openLightbox('scena6.jpg', 'Fiction Rai: Frame tratto dalla serie «Sempre al tuo fianco» - Stagione 1 Episodio 11', false)">
-            <img src="scena6.jpg" alt="Primo piano di Aurora Materni in una scena della serie TV Rai Sempre al tuo fianco">
-        </div>
-
-    </div>
-
-    <div id="lightbox" onclick="closeLightbox()">
-        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-img" src="">
-        <video id="lightbox-video" controls loop playsinline></video>
-        <div id="lightbox-caption"></div>
-    </div>
-
-    <script>
-        function openLightbox(src, text, isVideo) {
-            const lightbox = document.getElementById('lightbox');
-            const img = document.getElementById('lightbox-img');
-            const video = document.getElementById('lightbox-video');
-            const caption = document.getElementById('lightbox-caption');
-
-            caption.innerHTML = text;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-
-            if (isVideo) {
-                img.style.display = 'none';
-                video.style.display = 'block';
-                video.src = src;
-                video.play();
-            } else {
-                video.style.display = 'none';
-                video.pause();
-                img.style.display = 'block';
-                img.src = src;
-            }
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            const video = document.getElementById('lightbox-video');
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            video.pause();
-            video.src = "";
-        }
-    </script>
-
-</body>
-</html>
 
