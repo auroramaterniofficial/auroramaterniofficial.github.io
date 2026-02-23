@@ -13,7 +13,6 @@
         h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
         .video-section { width: 90%; max-width: 800px; padding-bottom: 80px; }
 
-        /* Stile Unificato per Card YouTube e Video Locale */
         .video-box { 
             position: relative; 
             width: 100%; 
@@ -21,10 +20,9 @@
             background: #000; 
             margin-bottom: 20px; 
             overflow: hidden;
-            aspect-ratio: 16 / 9; /* Forza entrambi alla stessa forma cinematografica */
+            aspect-ratio: 16 / 9; 
         }
 
-        /* Card YouTube */
         .video-card-link { display: block; width: 100%; height: 100%; text-decoration: none; }
         .video-card-link img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; filter: grayscale(20%); }
         .video-card-link:hover img { transform: scale(1.05); filter: grayscale(0%); }
@@ -33,7 +31,6 @@
         .play-icon { width: 60px; height: 60px; background: rgba(212, 175, 55, 0.9); border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
         .play-icon::after { content: ''; border-style: solid; border-width: 12px 0 12px 20px; border-color: transparent transparent transparent #1a1a1a; margin-left: 4px; }
 
-        /* Video Locale */
         .video-box video { width: 100%; height: 100%; object-fit: cover; outline: none; }
 
         .video-info { margin-bottom: 50px; text-align: left; }
@@ -55,14 +52,45 @@
         <div class="video-box">
             <a href="https://www.youtube.com/watch?v=_4TXyyChRIo" target="_blank" class="video-card-link">
                 <img src="https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg" alt="Aurora Materni Nero a Metà 3">
-                <div class="play-overlay">
-                    <div class="play-icon"></div>
-                </div>
+                <div class="play-overlay"><div class="play-icon"></div></div>
             </a>
         </div>
         <div class="video-info">
             <h3>Nero a Metà 3 - Clip Ufficiale</h3>
             <p>Interpretazione del ruolo di Myriam nella fiction di Rai 1. Regia di Claudio Amendola.</p>
+        </div>
+
+        <div class="video-box">
+            <a href="https://www.youtube.com/watch?v=qFodDlxj3Bc" target="_blank" class="video-card-link">
+                <img src="https://img.youtube.com/vi/qFodDlxj3Bc/maxresdefault.jpg" alt="Aurora Materni incontra Claudio Amendola">
+                <div class="play-overlay"><div class="play-icon"></div></div>
+            </a>
+        </div>
+        <div class="video-info">
+            <h3>Nero a Metà 3 - L'incontro</h3>
+            <p>Aurora Materni nel ruolo di Myriam incontra Claudio Amendola.</p>
+        </div>
+
+        <div class="video-box">
+            <a href="https://www.youtube.com/watch?v=xBTnyFNj7ZY" target="_blank" class="video-card-link">
+                <img src="https://img.youtube.com/vi/xBTnyFNj7ZY/maxresdefault.jpg" alt="Myriam scopre la verità">
+                <div class="play-overlay"><div class="play-icon"></div></div>
+            </a>
+        </div>
+        <div class="video-info">
+            <h3>Nero a Metà 3 - La Svolta</h3>
+            <p>Myriam scopre la verità sul padre...</p>
+        </div>
+
+        <div class="video-box">
+            <a href="https://www.youtube.com/watch?v=ssPXajhAmJc" target="_blank" class="video-card-link">
+                <img src="https://img.youtube.com/vi/ssPXajhAmJc/maxresdefault.jpg" alt="Aurora Materni Dialogo Myriam">
+                <div class="play-overlay"><div class="play-icon"></div></div>
+            </a>
+        </div>
+        <div class="video-info">
+            <h3>Nero a Metà 3 - Dialogo</h3>
+            <p>Aurora Materni - Dialogo Myriam - Claudio Amendola.</p>
         </div>
 
         <div class="video-box">
@@ -80,6 +108,7 @@
     <a href="index.html" class="btn-style-insta">Torna alla Home Page</a>
 </body>
 </html>
+
 
 
 
