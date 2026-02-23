@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografia - Aurora Materni Official</title>
+    
+    <title>Aurora Materni | Biografia Ufficiale - Attrice</title>
+    <link rel="canonical" href="https://auroramaterniofficial.github.io/biografia.html" />
+    <meta name="description" content="Scopri la biografia di Aurora Materni: dagli studi a Teatro a Vista ai ruoli in Nero a Metà 3 e le collaborazioni con Albert Watson e Laura Biagiotti.">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
     <style>
         body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
+        
+        /* Torna alla Home più visibile */
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
         
@@ -37,7 +44,6 @@
             font-weight: 400;
         }
 
-        /* Paragrafo Watson e Biagiotti con leggero risalto visivo */
         .featured-para {
             border-left: 2px solid #d4af37; 
             padding-left: 25px;
@@ -45,19 +51,42 @@
             color: #fff !important;
         }
 
-        .social-link { display: inline-block; margin-top: 50px; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: 0.3s; }
+        .social-link { display: inline-block; margin-top: 20px; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: 0.3s; }
         .social-link:hover { background-color: #d4af37; color: #1a1a1a; }
+
+        /* BOX FINALE PER SPINGERE LA HOME */
+        .home-booster {
+            margin-top: 80px;
+            padding: 40px;
+            border: 1px solid #333;
+            text-align: center;
+            background-color: #121212;
+        }
+        .home-booster p { margin-bottom: 20px; font-size: 0.9rem; color: #888; letter-spacing: 1px; }
+        .btn-official {
+            text-decoration: none;
+            color: #1a1a1a;
+            background-color: #d4af37;
+            padding: 15px 30px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-official:hover { background-color: #f4f1ea; transform: scale(1.05); }
 
         @media (max-width: 600px) {
             .bio-section { padding: 30px 15px; }
             .bio-text p { text-align: left; }
             .quote { font-size: 1.4rem; margin: 40px 0 50px 0; }
+            .home-booster { padding: 30px 15px; }
         }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-home">← Torna alla Home</a>
+    <a href="index.html" class="back-home">← Torna al Sito Ufficiale</a>
 
     <section class="bio-section">
         <span class="quote">« Il cinema non è un'arte della riproduzione, <br> ma della rivelazione. »</span>
@@ -80,7 +109,10 @@
             </p>
         </div>
 
-        <div style="text-align: center;">
+        <div class="home-booster">
+            <p>Per video, showreel e aggiornamenti cinematografici</p>
+            <a href="index.html" class="btn-official">Visita la Home del Sito Ufficiale</a>
+            <br><br>
             <a href="https://www.instagram.com/aurora.materni.official" target="_blank" class="social-link">
                 Segui @aurora.materniofficial
             </a>
@@ -89,5 +121,6 @@
 
 </body>
 </html>
+
 
 
