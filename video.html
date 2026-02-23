@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video e Showreel - Aurora Materni Official</title>
+    <link rel="canonical" href="https://auroramaterniofficial.github.io/video.html" />
+    <meta name="description" content="Guarda i video e le clip cinematografiche di Aurora Materni: Nero a Metà 3 e contenuti esclusivi dal backstage.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        
+        .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .back-home:hover { border-bottom: 1px solid #d4af37; }
+        
+        h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
+        
+        .video-section { width: 90%; max-width: 900px; padding-bottom: 80px; }
+        
+        /* Container per Video YouTube (16:9) */
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid #333; background: #000; margin-bottom: 20px; }
+        .video-wrapper iframe, .video-wrapper video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        .video-info { margin-bottom: 60px; text-align: left; }
+        .video-info h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #d4af37; margin-bottom: 10px; font-weight: 400; }
+        .video-info p { font-size: 0.95rem; color: #ccc; line-height: 1.6; margin: 0; }
+
+        .btn-style-insta { 
+            display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; 
+            color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; 
+            text-transform: uppercase; transition: all 0.3s ease; margin-bottom: 60px;
+        }
+        .btn-style-insta:hover { background-color: #d4af37; color: #1a1a1a; transform: translateY(-3px); }
+
+        @media (max-width: 768px) { h2 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-home">← Torna al Sito Ufficiale</a>
+    
+    <h2>Video e Clip</h2>
+
+    <div class="video-section">
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/_4TXyyChRIo?rel=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+            <h3>Nero a Metà 3 - Clip Ufficiale</h3>
+            <p>Aurora Materni interpreta il ruolo di Myriam nella fiction di Rai 1. Regia di Claudio Amendola.</p>
+        </div>
+
+        <div class="video-wrapper">
+            <video controls poster="scena1.jpg">
+                <source src="backstage.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
+        </div>
+        <div class="video-info">
+            <h3>Backstage sul set</h3>
+            <p>Momenti di preparazione e riprese: l'atmosfera creativa dietro le quinte del lavoro cinematografico.</p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="btn-style-insta">Torna alla Home Page</a>
+
+</body>
+</html>
