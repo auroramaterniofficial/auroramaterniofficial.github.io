@@ -6,38 +6,48 @@
     
     <title>Aurora Materni | Attrice - Sito Ufficiale</title>
     <link rel="canonical" href="https://auroramaterniofficial.github.io/" />
-    <meta name="description" content="Sito ufficiale di Aurora Materni, giovane attrice professionista. Esperienze in Nero a Metà 3 e collaborazioni con Albert Watson. Disponibile per casting minori e produzioni cinematografiche.">
-    <meta name="keywords" content="Aurora Materni, attrice, casting minori, attrici minori, giovani attrici italiane, cinema, Nero a Metà 3, Albert Watson, Roma Codex, Teatro a Vista, attrice romana 12 anni, agenzia peter pan">
+    <meta name="description" content="Sito ufficiale di Aurora Materni, giovane attrice professionista. Esperienze in Nero a Metà 3 e collaborazioni con Albert Watson. Cinema, Teatro e Fotografia d'autore.">
+    <meta name="keywords" content="Aurora Materni, attrice, casting, cinema, Nero a Metà 3, Albert Watson, Teatro a Vista, attrice romana, sito ufficiale aurora materni">
     <meta name="author" content="Aurora Materni">
 
-    <meta property="og:title" content="Aurora Materni - Official Website">
-    <meta property="og:description" content="Esplora il percorso artistico di Aurora Materni tra cinema e fotografia d'autore.">
+    <meta property="og:title" content="Aurora Materni - Sito Ufficiale">
+    <meta property="og:description" content="Esplora il percorso artistico di Aurora Materni tra cinema, teatro e fotografia d'autore.">
     <meta property="og:image" content="foto-attrice.jpg">
-    <meta property="og:url" content="https://www.auroramaterni.it/">
+    <meta property="og:url" content="https://auroramaterniofficial.github.io/">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
-        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 20px solid #121212; box-sizing: border-box; position: relative; }
+        header { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 20px solid #121212; box-sizing: border-box; position: relative; padding: 40px 0; }
         .profile-photo img { width: 400px; height: 550px; object-fit: cover; border: 1px solid #d4af37; padding: 15px; margin-bottom: 30px; filter: grayscale(100%); transition: all 0.5s ease; }
         .profile-photo img:hover { filter: grayscale(0%); transform: scale(1.02); }
         h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 5.5rem; letter-spacing: 2px; margin: 10px 0; font-weight: 400; color: #f4f1ea; }
         .subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.8rem; color: #d4af37; margin-bottom: 2.5rem; opacity: 0.9; letter-spacing: 1px; }
-        .nav-links { display: flex; gap: 25px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 40px; }
-        .nav-item { text-decoration: none; color: #f4f1ea; font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; transition: all 0.3s ease; border-bottom: 1px solid transparent; }
+        .nav-links { display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 40px; max-width: 90%; }
+        .nav-item { text-decoration: none; color: #f4f1ea; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; border-bottom: 1px solid transparent; }
         .nav-item:hover { color: #d4af37; border-bottom: 1px solid #d4af37; }
         .divider { width: 1px; height: 15px; background-color: #d4af37; opacity: 0.5; }
         .instagram-btn { display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: all 0.3s ease; }
         .instagram-btn:hover { background-color: #d4af37; color: #1a1a1a; transform: translateY(-3px); }
-        @media (max-width: 768px) { header { border-width: 10px; padding: 20px; height: auto; min-height: 100vh; } .profile-photo img { width: 280px; height: 380px; } h1 { font-size: 3rem; } .subtitle { font-size: 1.2rem; } .nav-links { gap: 15px; margin-bottom: 30px; } .divider { display: none; } }
+        
+        /* Ottimizzazione mobile */
+        @media (max-width: 768px) { 
+            header { border-width: 10px; padding: 40px 20px; height: auto; } 
+            .profile-photo img { width: 280px; height: 380px; } 
+            h1 { font-size: 3rem; } 
+            .subtitle { font-size: 1.2rem; } 
+            .nav-links { gap: 10px; } 
+            .divider { display: none; } 
+            .nav-item { font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #333; padding: 5px 10px; border-radius: 3px; }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="profile-photo">
-            <img src="foto-attrice.jpg" alt="Aurora Materni - Attrice Minorenne Professionista">
+            <img src="foto-attrice.jpg" alt="Aurora Materni - Attrice - Sito Ufficiale">
         </div>
 
         <h1><span style="color: #d4af37;">A</span>urora <span style="color: #d4af37;">M</span>aterni</h1>
@@ -50,6 +60,8 @@
             <div class="divider"></div>
             <a href="cinema.html" class="nav-item">Cinema</a>
             <div class="divider"></div>
+            <a href="teatro.html" class="nav-item">Teatro</a>
+            <div class="divider"></div>
             <a href="curriculum.html" class="nav-item">CV</a>
             <div class="divider"></div>
             <a href="contatti.html" class="nav-item">Contatti</a>
@@ -61,6 +73,7 @@
     </header>
 </body>
 </html>
+
 
 
 
