@@ -11,59 +11,76 @@
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
         h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
-        .video-section { width: 90%; max-width: 900px; padding-bottom: 80px; }
+        .video-section { width: 90%; max-width: 800px; padding-bottom: 80px; }
 
-        /* Card Video YouTube */
-        .video-card { position: relative; width: 100%; border: 1px solid #333; overflow: hidden; margin-bottom: 20px; cursor: pointer; display: block; text-decoration: none; }
-        .video-card img { width: 100%; display: block; transition: 0.5s ease; filter: grayscale(30%); }
-        .video-card:hover img { transform: scale(1.05); filter: grayscale(0%); }
-        .play-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); display: flex; justify-content: center; align-items: center; }
-        .play-icon { width: 70px; height: 70px; background: rgba(212, 175, 55, 0.9); border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
-        .play-icon::after { content: ''; border-style: solid; border-width: 15px 0 15px 25px; border-color: transparent transparent transparent #1a1a1a; margin-left: 5px; }
-        .video-card:hover .play-icon { transform: scale(1.1); background: #d4af37; }
+        /* Stile Unificato per Card YouTube e Video Locale */
+        .video-box { 
+            position: relative; 
+            width: 100%; 
+            border: 1px solid #333; 
+            background: #000; 
+            margin-bottom: 20px; 
+            overflow: hidden;
+            aspect-ratio: 16 / 9; /* Forza entrambi alla stessa forma cinematografica */
+        }
+
+        /* Card YouTube */
+        .video-card-link { display: block; width: 100%; height: 100%; text-decoration: none; }
+        .video-card-link img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease; filter: grayscale(20%); }
+        .video-card-link:hover img { transform: scale(1.05); filter: grayscale(0%); }
+        
+        .play-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; pointer-events: none; }
+        .play-icon { width: 60px; height: 60px; background: rgba(212, 175, 55, 0.9); border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
+        .play-icon::after { content: ''; border-style: solid; border-width: 12px 0 12px 20px; border-color: transparent transparent transparent #1a1a1a; margin-left: 4px; }
 
         /* Video Locale */
-        .local-video-container { width: 100%; border: 1px solid #333; background: #000; margin-bottom: 20px; }
-        .local-video-container video { width: 100%; display: block; height: auto; outline: none; }
+        .video-box video { width: 100%; height: 100%; object-fit: cover; outline: none; }
 
-        .video-info { margin-bottom: 60px; text-align: left; }
-        .video-info h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #d4af37; margin-bottom: 10px; font-weight: 400; }
-        .video-info p { font-size: 0.95rem; color: #ccc; line-height: 1.6; margin: 0; }
+        .video-info { margin-bottom: 50px; text-align: left; }
+        .video-info h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #d4af37; margin-bottom: 8px; font-weight: 400; }
+        .video-info p { font-size: 0.9rem; color: #ccc; line-height: 1.6; margin: 0; }
+
         .btn-style-insta { display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: all 0.3s ease; margin-bottom: 60px; }
         .btn-style-insta:hover { background-color: #d4af37; color: #1a1a1a; transform: translateY(-3px); }
-        @media (max-width: 768px) { h2 { font-size: 2rem; } .play-icon { width: 50px; height: 50px; } }
+
+        @media (max-width: 768px) { h2 { font-size: 2rem; } .video-info h3 { font-size: 1.2rem; } }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-home">← Torna al Sito Ufficiale</a>
     <h2>Video e Clip</h2>
+    
     <div class="video-section">
         
-        <a href="https://www.youtube.com/watch?v=_4TXyyChRIo" target="_blank" class="video-card">
-            <img src="https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg" alt="Aurora Materni Nero a Metà 3">
-            <div class="play-overlay">
-                <div class="play-icon"></div>
-            </div>
-        </a>
+        <div class="video-box">
+            <a href="https://www.youtube.com/watch?v=_4TXyyChRIo" target="_blank" class="video-card-link">
+                <img src="https://img.youtube.com/vi/_4TXyyChRIo/maxresdefault.jpg" alt="Aurora Materni Nero a Metà 3">
+                <div class="play-overlay">
+                    <div class="play-icon"></div>
+                </div>
+            </a>
+        </div>
         <div class="video-info">
             <h3>Nero a Metà 3 - Clip Ufficiale</h3>
-            <p>Aurora Materni interpreta il ruolo di Myriam nella fiction di Rai 1. Clicca per guardare il video su YouTube.</p>
+            <p>Interpretazione del ruolo di Myriam nella fiction di Rai 1. Regia di Claudio Amendola.</p>
         </div>
 
-        <div class="local-video-container">
+        <div class="video-box">
             <video controls poster="scena4.jpg">
                 <source src="backstage.mp4" type="video/mp4">
             </video>
         </div>
         <div class="video-info">
             <h3>Backstage sul set</h3>
-            <p>Momenti di preparazione e riprese sul set della fiction «Sempre al tuo fianco».</p>
+            <p>Preparazione e riprese sul set della fiction «Sempre al tuo fianco» con Marco Pontecorvo.</p>
         </div>
 
     </div>
+
     <a href="index.html" class="btn-style-insta">Torna alla Home Page</a>
 </body>
 </html>
+
 
 
 
