@@ -19,9 +19,13 @@
         
         .video-section { width: 90%; max-width: 900px; padding-bottom: 80px; }
         
-        /* Container per Video YouTube (16:9) */
+        /* Container responsivo per YouTube */
         .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid #333; background: #000; margin-bottom: 20px; }
-        .video-wrapper iframe, .video-wrapper video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        /* Container per video locali */
+        .local-video-container { width: 100%; border: 1px solid #333; background: #000; margin-bottom: 20px; }
+        .local-video-container video { width: 100%; display: block; height: auto; outline: none; }
 
         .video-info { margin-bottom: 60px; text-align: left; }
         .video-info h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #d4af37; margin-bottom: 10px; font-weight: 400; }
@@ -46,22 +50,22 @@
     <div class="video-section">
         
         <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/_4TXyyChRIo?rel=0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/_4TXyyChRIo" allowfullscreen></iframe>
         </div>
         <div class="video-info">
             <h3>Nero a Metà 3 - Clip Ufficiale</h3>
-            <p>Aurora Materni interpreta il ruolo di Myriam nella fiction di Rai 1. Regia di Claudio Amendola.</p>
+            <p>Aurora Materni interpreta il ruolo di Myriam nella fiction di Rai 1. Regia di Claudio Amendola ed Enrico Rosati.</p>
         </div>
 
-        <div class="video-wrapper">
-            <video controls poster="scena1.jpg">
+        <div class="local-video-container">
+            <video controls poster="scena4.jpg">
                 <source src="backstage.mp4" type="video/mp4">
                 Il tuo browser non supporta il tag video.
             </video>
         </div>
         <div class="video-info">
             <h3>Backstage sul set</h3>
-            <p>Momenti di preparazione e riprese: l'atmosfera creativa dietro le quinte del lavoro cinematografico.</p>
+            <p>Momenti di preparazione e riprese sul set della fiction «Sempre al tuo fianco», diretta da Marco Pontecorvo.</p>
         </div>
 
     </div>
