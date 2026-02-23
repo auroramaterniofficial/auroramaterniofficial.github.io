@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro - Aurora Materni Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
+        
+        .container { padding: 20px; max-width: 600px; }
+        
+        h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin-bottom: 10px; font-weight: 400; }
+        
+        .line { width: 50px; height: 1px; background-color: #d4af37; margin: 20px auto; }
+        
+        p { font-size: 1rem; color: #ccc; letter-spacing: 1px; line-height: 1.8; margin-bottom: 40px; }
+        
+        .status-tag { font-size: 0.7rem; text-transform: uppercase; color: #d4af37; border: 1px solid #d4af37; padding: 5px 15px; border-radius: 20px; letter-spacing: 2px; }
+
+        .btn-back { 
+            display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; 
+            color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; 
+            text-transform: uppercase; transition: all 0.3s ease; margin-top: 20px;
+        }
+        .btn-back:hover { background-color: #d4af37; color: #1a1a1a; }
+
+        /* Effetto sipario soft */
+        .bg-gradient {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(40,40,40,1) 0%, rgba(26,26,26,1) 100%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <span class="status-tag">In Allestimento</span>
+        <h2>Teatro</h2>
+        <div class="line"></div>
+        <p>Stiamo raccogliendo i materiali d'archivio, le locandine e le foto di scena. La sezione dedicata alla carriera teatrale di Aurora Materni sarà disponibile a breve.</p>
+        
+        <a href="index.html" class="btn-back">Torna alla Home Page</a>
+    </div>
+
+</body>
+</html>
