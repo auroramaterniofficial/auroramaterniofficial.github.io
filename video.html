@@ -21,7 +21,8 @@
         
         /* Container responsivo per YouTube */
         .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid #333; background: #000; margin-bottom: 20px; }
-        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        /* Aggiunto z-index e pointer-events per migliorare la risposta al tocco mobile */
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 10; }
 
         /* Container per video locali */
         .local-video-container { width: 100%; border: 1px solid #333; background: #000; margin-bottom: 20px; }
@@ -51,7 +52,7 @@
         
         <div class="video-wrapper">
             <iframe 
-                src="https://www.youtube.com/embed/_4TXyyChRIo" 
+                src="https://www.youtube.com/embed/_4TXyyChRIo?playsinline=1&enablejsapi=1" 
                 title="Nero a Metà 3 - Aurora Materni"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
@@ -79,5 +80,6 @@
 
 </body>
 </html>
+
 
 
