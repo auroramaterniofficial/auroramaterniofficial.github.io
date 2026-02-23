@@ -20,23 +20,54 @@
     <style>
         body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
         header { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 20px solid #121212; box-sizing: border-box; position: relative; padding: 40px 0; }
+        
         .profile-photo img { width: 400px; height: 550px; object-fit: cover; border: 1px solid #d4af37; padding: 15px; margin-bottom: 30px; filter: grayscale(100%); transition: all 0.5s ease; }
         .profile-photo img:hover { filter: grayscale(0%); transform: scale(1.02); }
-        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 5.5rem; letter-spacing: 2px; margin: 10px 0; font-weight: 400; color: #f4f1ea; }
+        
+        /* Stile per l'etichetta Official Website */
+        .official-label { letter-spacing: 5px; font-size: 0.75rem; text-transform: uppercase; color: #d4af37; margin-bottom: 5px; opacity: 0.8; font-weight: 300; }
+
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 5.5rem; letter-spacing: 2px; margin: 5px 0 10px 0; font-weight: 400; color: #f4f1ea; }
         .subtitle { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.8rem; color: #d4af37; margin-bottom: 2.5rem; opacity: 0.9; letter-spacing: 1px; }
-        .nav-links { display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 40px; max-width: 90%; }
+
+        .welcome-text {
+            max-width: 650px;
+            margin: 0 auto 40px auto;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #f4f1ea;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding: 0 20px;
+        }
+        .welcome-text::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: #d4af37;
+            margin: 20px auto 0;
+        }
+
+        .nav-links { display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 40px; max-width: 95%; }
         .nav-item { text-decoration: none; color: #f4f1ea; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; border-bottom: 1px solid transparent; }
         .nav-item:hover { color: #d4af37; border-bottom: 1px solid #d4af37; }
         .divider { width: 1px; height: 15px; background-color: #d4af37; opacity: 0.5; }
+        
         .instagram-btn { display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: all 0.3s ease; }
         .instagram-btn:hover { background-color: #d4af37; color: #1a1a1a; transform: translateY(-3px); }
         
-        /* Ottimizzazione mobile */
         @media (max-width: 768px) { 
             header { border-width: 10px; padding: 40px 20px; height: auto; } 
             .profile-photo img { width: 280px; height: 380px; } 
+            .official-label { font-size: 0.6rem; letter-spacing: 3px; }
             h1 { font-size: 3rem; } 
             .subtitle { font-size: 1.2rem; } 
+            .welcome-text { font-size: 1rem; }
             .nav-links { gap: 10px; } 
             .divider { display: none; } 
             .nav-item { font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #333; padding: 5px 10px; border-radius: 3px; }
@@ -47,18 +78,28 @@
 <body>
     <header>
         <div class="profile-photo">
-            <img src="foto-attrice.jpg" alt="Aurora Materni - Attrice - Sito Ufficiale">
+            <img src="foto-attrice.jpg" alt="Aurora Materni - Attrice Cinema e Teatro - Sito Ufficiale">
         </div>
+
+        <div class="official-label">Official Website</div>
 
         <h1><span style="color: #d4af37;">A</span>urora <span style="color: #d4af37;">M</span>aterni</h1>
         <div class="subtitle">L'eleganza del cinema senza tempo</div>
+
+        <div class="welcome-text">
+            Benvenuti nel Sito Ufficiale di <strong>Aurora Materni</strong>.<br>
+            Un viaggio attraverso il cinema e il teatro, dai set di <em>Nero a Metà 3</em> 
+            alla fotografia d'autore. Esplora il percorso artistico di un'eleganza senza tempo.
+        </div>
 
         <nav class="nav-links">
             <a href="biografia.html" class="nav-item">Biografia</a>
             <div class="divider"></div>
             <a href="photobook.html" class="nav-item">Photobook</a>
             <div class="divider"></div>
-            <a href="cinema.html" class="nav-item">Cinema</a>
+            <a href="video.html" class="nav-item">Video Cinema</a>
+            <div class="divider"></div>
+            <a href="foto-set.html" class="nav-item">Foto Set</a>
             <div class="divider"></div>
             <a href="teatro.html" class="nav-item">Teatro</a>
             <div class="divider"></div>
@@ -73,6 +114,7 @@
     </header>
 </body>
 </html>
+
 
 
 
