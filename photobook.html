@@ -7,13 +7,18 @@
     <title>Photobook Aurora Materni | Gallery Attrice e Modella</title>
     <meta name="description" content="Sfoglia il portfolio fotografico di Aurora Materni. Foto artistiche, headshot per casting e scatti esclusivi dal progetto Roma Codex di Albert Watson.">
     <meta name="keywords" content="book fotografico attrice, Aurora Materni foto, headshot casting minori, portfolio attrice cinema, Albert Watson Aurora Materni, foto professionali attrici">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://auroramaterniofficial.github.io/photobook.html" />
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
-        h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
+        
+        /* Modificato da h2 a h1 per la SEO, mantenendo lo stesso stile */
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
+        
         .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 80px; }
         .book-item { position: relative; background-color: #121212; overflow: hidden; aspect-ratio: 1/1; border: 1px solid #222; cursor: pointer; }
         .special-frame { border: 1px solid #d4af37 !important; }
@@ -38,7 +43,7 @@
             max-height: 80%; 
             border: 1px solid #d4af37; 
             box-shadow: 0 0 50px rgba(0,0,0,0.8); 
-            cursor: default; /* Cliccare sulla foto non deve far nulla, si chiude cliccando fuori */
+            cursor: default;
         }
         .lightbox-caption { position: absolute; bottom: 40px; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; text-align: center; width: 100%; }
 
@@ -57,8 +62,7 @@
         /* MODIFICHE SPECIFICHE PER MOBILE */
         @media (max-width: 768px) {
             .book-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            h2 { font-size: 1.8rem; }
-            /* Disattiva bianco e nero su mobile per immediatezza */
+            h1 { font-size: 1.8rem; }
             .book-item img { filter: grayscale(0%); }
             .lightbox-caption { bottom: 20px; font-size: 0.7rem; padding: 0 10px; }
             #lightbox img { max-width: 95%; }
@@ -69,7 +73,7 @@
 <body>
 
     <a href="index.html" class="back-home">← Torna alla Home</a>
-    <h2>Photobook</h2>
+    <h1>Photobook</h1>
     
     <div class="book-grid">
         
@@ -104,6 +108,7 @@
         <div class="book-item" onclick="openLightbox('foto6.webp', 'Book Fotografico - Figura intera/Piano americano')">
             <img src="foto6.webp" alt="Aurora Materni attrice casting posa professionale cinema">
         </div>
+    </div>
 
     <div id="lightbox" onclick="closeLightbox()">
         <span class="close-lightbox">&times;</span>
@@ -116,13 +121,11 @@
             document.getElementById('lightbox-img').src = imageSrc;
             document.getElementById('lightbox-caption').innerHTML = text;
             document.getElementById('lightbox').style.display = 'flex';
-            // Impedisce alla pagina di scorrere mentre la foto è aperta
             document.body.style.overflow = 'hidden';
         }
 
         function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none';
-            // Ripristina lo scorrimento della pagina
             document.body.style.overflow = 'auto';
         }
     </script>
