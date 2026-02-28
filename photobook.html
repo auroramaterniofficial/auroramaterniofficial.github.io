@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Photobook Aurora Materni | Gallery Attrice e Modella</title>
-    <meta name="description" content="Sfoglia il portfolio fotografico di Aurora Materni. Foto artistiche, headshot per casting e scatti esclusivi dal progetto Roma Codex di Albert Watson.">
-    <meta name="keywords" content="book fotografico attrice, Aurora Materni foto, headshot casting minori, portfolio attrice cinema, Albert Watson Aurora Materni, foto professionali attrici">
+    <title>Book Fotografico Aurora Materni | Headshots e Progetto Albert Watson</title>
+    
+    <meta name="description" content="Portfolio professionale di Aurora Materni: dai leggendari scatti di Albert Watson (Roma Codex) agli headshot ufficiali per casting cinema e TV. Guarda la gallery.">
+    
+    <meta name="keywords" content="Aurora Materni, Albert Watson Roma Codex, book fotografico attrice cinema, headshot casting professionali, portfolio attrice bilingue, foto casting Roma">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auroramaterniofficial.github.io/photobook.html" />
+
+    <meta property="og:title" content="Aurora Materni - Portfolio Fotografico Professionale">
+    <meta property="og:description" content="Scatti d'autore e headshot per il cinema.">
+    <meta property="og:image" content="https://auroramaterniofficial.github.io/watson-mostra.jpg">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
@@ -16,67 +22,46 @@
         .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
         
-        /* Modificato da h2 a h1 per la SEO, mantenendo lo stesso stile */
-        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0; font-weight: 400; }
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0 10px 0; font-weight: 400; text-align: center; }
+        .seo-subtext { text-align: center; color: #888; font-size: 0.9rem; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; padding: 0 20px; }
         
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 80px; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 40px; }
         .book-item { position: relative; background-color: #121212; overflow: hidden; aspect-ratio: 1/1; border: 1px solid #222; cursor: pointer; }
         .special-frame { border: 1px solid #d4af37 !important; }
         
         .book-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; }
         .book-item:hover img { filter: grayscale(0%); transform: scale(1.05); }
 
-        /* LIGHTBOX OTTIMIZZATO */
-        #lightbox { 
-            display: none; 
-            position: fixed; 
-            z-index: 1000; 
-            top: 0; left: 0; 
-            width: 100%; height: 100%; 
-            background-color: rgba(0, 0, 0, 0.98); 
-            justify-content: center; 
-            align-items: center; 
-            cursor: pointer; 
-        }
-        #lightbox img { 
-            max-width: 90%; 
-            max-height: 80%; 
-            border: 1px solid #d4af37; 
-            box-shadow: 0 0 50px rgba(0,0,0,0.8); 
-            cursor: default;
-        }
+        /* TASTO CTA CINEMA */
+        .cta-cinema { text-align: center; margin: 40px 0 80px 0; }
+        .cta-button { text-decoration: none; color: #1a1a1a; background-color: #d4af37; padding: 15px 30px; border-radius: 2px; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; display: inline-block; }
+        .cta-button:hover { background-color: #f4f1ea; color: #1a1a1a; }
+
+        /* LIGHTBOX */
+        #lightbox { display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.98); justify-content: center; align-items: center; cursor: pointer; }
+        #lightbox img { max-width: 90%; max-height: 80%; border: 1px solid #d4af37; box-shadow: 0 0 50px rgba(0,0,0,0.8); cursor: default; }
         .lightbox-caption { position: absolute; bottom: 40px; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; text-align: center; width: 100%; }
+        .close-lightbox { position: absolute; top: 20px; right: 30px; color: #d4af37; font-size: 40px; font-weight: 300; cursor: pointer; z-index: 1001; }
 
-        /* TASTO CHIUSURA (X) */
-        .close-lightbox {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: #d4af37;
-            font-size: 40px;
-            font-weight: 300;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        /* MODIFICHE SPECIFICHE PER MOBILE */
         @media (max-width: 768px) {
             .book-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
             h1 { font-size: 1.8rem; }
             .book-item img { filter: grayscale(0%); }
             .lightbox-caption { bottom: 20px; font-size: 0.7rem; padding: 0 10px; }
             #lightbox img { max-width: 95%; }
-            .close-lightbox { top: 10px; right: 20px; font-size: 35px; }
         }
     </style>
 </head>
 <body>
 
     <a href="index.html" class="back-home">← Torna alla Home</a>
-    <h1>Photobook</h1>
+    
+    <h1>Portfolio Fotografico & Headshots</h1>
+    <p class="seo-subtext">
+        Selezione di scatti professionali per il cinema e la moda, inclusi i ritratti artistici realizzati da <strong>Albert Watson</strong> per il progetto "Roma Codex" a Villa Medici.
+    </p>
     
     <div class="book-grid">
-        
         <div class="book-item special-frame" onclick="openLightbox('watson-mostra.jpg', 'Albert Watson Exhibition - Progetto Roma Codex - Fine Art Print')">
             <img src="watson-mostra.jpg" alt="Aurora Materni ritratto artistico Albert Watson Roma Codex Villa Medici">
         </div>
@@ -85,29 +70,33 @@
             <img src="watson-backstage.jpeg" alt="Backstage Albert Watson e Aurora Materni set fotografico Roma Villa Medici">
         </div>
 
-        <div class="book-item" onclick="openLightbox('foto1.webp', 'Headshot Professionale - Ritratto con occhiali - Studio Series')">
-            <img src="foto1.webp" alt="Aurora Materni attrice headshot casting cinema occhiali da vista">
+        <div class="book-item" onclick="openLightbox('foto1.webp', 'Headshot Professionale - Studio Series')">
+            <img src="foto1.webp" alt="Aurora Materni attrice headshot casting cinema occhiali">
         </div>
 
-        <div class="book-item" onclick="openLightbox('foto2.webp', 'Portrait Series - Espressività e naturalezza per il grande schermo')">
-            <img src="foto2.webp" alt="Aurora Materni portfolio attrice primo piano naturale casting">
+        <div class="book-item" onclick="openLightbox('foto2.webp', 'Portrait Series - Espressività per il grande schermo')">
+            <img src="foto2.webp" alt="Aurora Materni portfolio attrice primo piano casting">
         </div>
 
         <div class="book-item" onclick="openLightbox('foto3.webp', 'Editorial Portrait - Studio Photography')">
-            <img src="foto3.webp" alt="Aurora Materni casting minori cinema e TV foto professionale">
+            <img src="foto3.webp" alt="Aurora Materni casting cinema e TV foto professionale">
         </div>
 
         <div class="book-item" onclick="openLightbox('foto4.webp', 'Primo piano in denim')">
-            <img src="foto4.webp" alt="Aurora Materni modella attrice book fotografico professionale">
+            <img src="foto4.webp" alt="Aurora Materni modella attrice book fotografico">
         </div>
 
-        <div class="book-item" onclick="openLightbox('foto5.webp', 'Professional Headshot - Look Business/Formale - Aurora Materni Portrait')">
-            <img src="foto5.webp" alt="Aurora Materni headshot professionale attrice giacca nera camicia bianca casting cinema">
+        <div class="book-item" onclick="openLightbox('foto5.webp', 'Professional Headshot - Aurora Materni Portrait')">
+            <img src="foto5.webp" alt="Aurora Materni headshot professionale attrice giacca nera casting cinema">
         </div>
 
-        <div class="book-item" onclick="openLightbox('foto6.webp', 'Book Fotografico - Figura intera/Piano americano')">
+        <div class="book-item" onclick="openLightbox('foto6.webp', 'Book Fotografico - Piano americano')">
             <img src="foto6.webp" alt="Aurora Materni attrice casting posa professionale cinema">
         </div>
+    </div>
+
+    <div class="cta-cinema">
+        <a href="cinema.html" class="cta-button">Guarda le Clip Video / Cinema →</a>
     </div>
 
     <div id="lightbox" onclick="closeLightbox()">
