@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti - Aurora Materni | Sito Ufficiale</title>
+    <title>Contatti | Aurora Materni - Genius Management di Eugenio Piovosa</title>
     
-    <meta name="description" content="Contatta Aurora Materni per proposte lavorative, casting e collaborazioni nel cinema, teatro e moda. Email: mauro.materni@gmail.com">
+    <meta name="description" content="Contatta Aurora Materni. Rappresentanza artistica ufficiale: Genius Management di Eugenio Piovosa. Informazioni per casting e collaborazioni professionali.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auroramaterniofficial.github.io/contatti.html" />
 
@@ -16,11 +16,12 @@
             background-color: #1a1a1a; 
             color: #f4f1ea; 
             font-family: 'Montserrat', sans-serif; 
-            height: 100vh; 
+            min-height: 100vh; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
             justify-content: center; 
+            padding: 40px 0;
         }
 
         .back-home { 
@@ -40,42 +41,70 @@
         .contact-container { 
             text-align: center; 
             border: 1px solid #d4af37; 
-            padding: 60px; 
-            max-width: 500px; 
+            padding: 50px; 
+            max-width: 550px; 
             margin: 20px;
+            background-color: #121212;
         }
 
-        /* Modificato da h2 a h1 per la SEO */
+        .agency-box {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .agency-logo {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: brightness(1.1);
+        }
+
         h1 { 
             font-family: 'Playfair Display', serif; 
             font-style: italic; 
-            font-size: 2.5rem; 
-            margin: 0 0 30px 0; 
+            font-size: 2.2rem; 
+            margin: 0 0 10px 0; 
             font-weight: 400;
             color: #d4af37;
+        }
+
+        .agency-subtitle {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 25px;
+            display: block;
         }
         
         .email-link { 
             color: #f4f1ea; 
             text-decoration: none; 
-            font-size: 1.2rem; 
+            font-size: 1.1rem; 
             letter-spacing: 1px; 
             transition: 0.3s; 
             display: block; 
+            margin: 10px 0;
         }
 
         .email-link:hover { color: #d4af37; }
         
-        .divider-small {
-            width: 30px; 
-            height: 1px; 
-            background: #d4af37; 
-            margin: 20px auto;
+        .personal-section {
+            margin-top: 30px;
+        }
+
+        .personal-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #f4f1ea;
         }
 
         .info { 
-            font-size: 0.8rem; 
-            color: #888; 
+            font-size: 0.75rem; 
+            color: #666; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
             margin-top: 40px; 
@@ -83,8 +112,9 @@
 
         @media (max-width: 600px) {
             .contact-container { padding: 40px 20px; }
-            h1 { font-size: 2rem; }
-            .back-home { top: 30px; }
+            h1 { font-size: 1.8rem; }
+            .back-home { top: 25px; }
+            .agency-logo { max-width: 180px; }
         }
     </style>
 </head>
@@ -93,17 +123,27 @@
     <a href="index.html" class="back-home">← Torna alla Home</a>
     
     <div class="contact-container">
-        <h1>Contatti</h1>
-        <p style="margin-bottom: 30px; opacity: 0.8;">Per proposte lavorative e collaborazioni:</p>
         
-        <a href="mailto:mauro.materni@gmail.com" class="email-link">mauro.materni@gmail.com</a>
+        <div class="agency-box">
+            <span class="agency-subtitle">Rappresentanza Artistica</span>
+            <img src="logo-genius.png" alt="Genius Management di Eugenio Piovosa" class="agency-logo">
+            <h1>Genius Management</h1>
+            <p style="font-size: 0.9rem; color: #d4af37; letter-spacing: 1px;">di Eugenio Piovosa</p>
+            
+            <a href="mailto:info@geniusmanagement.it" class="email-link" style="margin-top: 20px; font-weight: bold;">info@geniusmanagement.it</a>
+        </div>
+
+        <div class="personal-section">
+            <h2>Contatti Diretti</h2>
+            <p style="margin-bottom: 15px; opacity: 0.7; font-size: 0.85rem;">Per collaborazioni e info rapide:</p>
+            
+            <a href="mailto:mauro.materni@gmail.com" class="email-link">mauro.materni@gmail.com</a>
+            <a href="tel:+393514508439" class="email-link" style="font-size: 1rem;">+39 351 4508439</a>
+        </div>
         
-        <div class="divider-small"></div>
-        
-        <a href="tel:+393514508439" class="email-link" style="font-size: 1.1rem;">+39 351 4508439</a>
-        
-        <div class="info">Disponibile per progetti nazionali e internazionali</div>
+        <div class="info">Disponibile per progetti nazionali e internazionali <br> Base: Roma</div>
     </div>
 
 </body>
 </html>
+
