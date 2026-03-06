@@ -53,6 +53,17 @@
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         }
 
+        /* Stile per il link dell'agenzia */
+        .agency-link {
+            text-decoration: none;
+            transition: 0.3s;
+            display: block;
+        }
+
+        .agency-link:hover {
+            opacity: 0.8;
+        }
+
         .agency-logo {
             max-width: 220px;
             height: auto;
@@ -126,9 +137,12 @@
         
         <div class="agency-box">
             <span class="agency-subtitle">Rappresentanza Artistica</span>
-            <img src="logo-genius.png" alt="Genius Management di Eugenio Piovosa" class="agency-logo">
-            <h1>Genius Management</h1>
-            <p style="font-size: 0.9rem; color: #d4af37; letter-spacing: 1px;">di Eugenio Piovosa</p>
+            
+            <a href="https://www.geniusmanagement.it" target="_blank" rel="noopener noreferrer" class="agency-link">
+                <img src="logo-genius.png" alt="Genius Management di Eugenio Piovosa" class="agency-logo">
+                <h1>Genius Management</h1>
+                <p style="font-size: 0.9rem; color: #d4af37; letter-spacing: 1px; margin-top: 5px;">di Eugenio Piovosa</p>
+            </a>
             
             <a href="mailto:info@geniusmanagement.it" class="email-link" style="margin-top: 20px; font-weight: bold;">info@geniusmanagement.it</a>
         </div>
@@ -146,4 +160,5 @@
 
 </body>
 </html>
+
 
