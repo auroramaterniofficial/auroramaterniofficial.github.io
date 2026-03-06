@@ -7,24 +7,47 @@
     <title>Portfolio Aurora Materni | Headshots Casting | Genius Management</title>
     
     <meta name="description" content="Portfolio fotografico ufficiale di Aurora Materni (Genius Management). Headshots casting cinema e scatti d'autore del progetto Roma Codex di Albert Watson.">
-    
-    <meta name="keywords" content="Aurora Materni, Genius Management, Eugenio Piovosa, Albert Watson Roma Codex, book fotografico attrice, headshot casting professionali, foto casting Roma, attrice bilingue">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auroramaterniofficial.github.io/photobook.html" />
-
-    <meta property="og:title" content="Aurora Materni - Portfolio Fotografico Professionale">
-    <meta property="og:description" content="Rappresentanza: Genius Management. Scatti d'autore e Headshots per il cinema.">
-    <meta property="og:image" content="https://auroramaterniofficial.github.io/watson-mostra.jpg">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
-        .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
+        
+        .back-home { 
+            margin-top: 50px; 
+            text-decoration: none; 
+            color: #d4af37; 
+            font-size: 0.8rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            border-bottom: 1px solid transparent; 
+            transition: 0.3s; 
+        }
         .back-home:hover { border-bottom: 1px solid #d4af37; }
         
-        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 40px 0 10px 0; font-weight: 400; text-align: center; }
-        .agency-info { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: #d4af37; margin-bottom: 20px; opacity: 0.9; }
-        .seo-subtext { text-align: center; color: #888; font-size: 0.9rem; max-width: 600px; margin: 0 auto 40px; line-height: 1.6; padding: 0 20px; }
+        /* Titolo con spaziatura ampia e senza riga agenzia sotto */
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-style: italic; 
+            font-size: 3rem; 
+            color: #d4af37; 
+            margin: 60px 0 30px 0; 
+            font-weight: 400; 
+            text-align: center; 
+            letter-spacing: 5px; 
+        }
+
+        .seo-subtext { 
+            text-align: center; 
+            color: #888; 
+            font-size: 0.9rem; 
+            max-width: 600px; 
+            margin: 0 auto 50px; 
+            line-height: 1.6; 
+            padding: 0 20px;
+            letter-spacing: 0.5px;
+        }
         
         .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 40px; }
         .book-item { position: relative; background-color: #121212; overflow: hidden; aspect-ratio: 1/1; border: 1px solid #222; cursor: pointer; }
@@ -33,10 +56,26 @@
         .book-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; }
         .book-item:hover img { filter: grayscale(0%); transform: scale(1.05); }
 
-        /* TASTO CTA VIDEO */
-        .cta-cinema { text-align: center; margin: 40px 0 80px 0; }
-        .cta-button { text-decoration: none; color: #1a1a1a; background-color: #d4af37; padding: 15px 30px; border-radius: 2px; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; display: inline-block; }
-        .cta-button:hover { background-color: #f4f1ea; color: #1a1a1a; }
+        /* Tasto CTA Video (Stile Outline) */
+        .cta-cinema { text-align: center; margin: 60px 0 100px 0; }
+        
+        .cta-button { 
+            text-decoration: none; 
+            color: #d4af37; 
+            border: 1px solid #d4af37; 
+            padding: 15px 35px; 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            transition: all 0.3s ease; 
+            display: inline-block; 
+        }
+        
+        .cta-button:hover { 
+            background-color: #d4af37; 
+            color: #1a1a1a; 
+            transform: translateY(-3px); 
+        }
 
         /* LIGHTBOX */
         #lightbox { display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.98); justify-content: center; align-items: center; cursor: pointer; }
@@ -46,10 +85,8 @@
 
         @media (max-width: 768px) {
             .book-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            h1 { font-size: 1.8rem; }
+            h1 { font-size: 2.2rem; letter-spacing: 3px; margin-top: 50px; }
             .book-item img { filter: grayscale(0%); }
-            .lightbox-caption { bottom: 20px; font-size: 0.7rem; padding: 0 10px; }
-            #lightbox img { max-width: 95%; }
         }
     </style>
 </head>
@@ -58,7 +95,6 @@
     <a href="index.html" class="back-home">← Torna alla Home</a>
     
     <h1>Portfolio & Headshots</h1>
-    <div class="agency-info">Genius Management di Eugenio Piovosa</div>
     
     <p class="seo-subtext">
         Materiale fotografico ufficiale ad uso casting. Include gli scatti artistici di <strong>Albert Watson</strong> (Roma Codex) e headshots professionali per produzioni Cinema e TV.
