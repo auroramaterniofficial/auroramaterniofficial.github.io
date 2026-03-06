@@ -10,27 +10,43 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Aurora Materni">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         body { margin: 0; padding: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
         
-        .back-home { margin-top: 50px; text-decoration: none; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid transparent; transition: 0.3s; }
-        .back-home:hover { border-bottom: 1px solid #d4af37; }
+        /* 1 - Nuovo tasto Home in alto */
+        .top-nav { margin-top: 50px; text-align: center; }
+
+        .btn-style-insta { 
+            display: inline-block; 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            text-decoration: none; 
+            color: #d4af37; 
+            border: 1px solid #d4af37; 
+            padding: 12px 25px; 
+            text-transform: uppercase; 
+            transition: all 0.3s ease; 
+        }
+        .btn-style-insta:hover { 
+            background-color: #d4af37; 
+            color: #1a1a1a; 
+            transform: translateY(-3px); 
+        }
         
+        /* 2 - Scritta Biografia più grande, font armonioso e posizionamento */
         h1 {
             font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 3.5rem; /* Più grande */
             color: #d4af37;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-top: 30px;
+            margin: 60px 0 20px 0; /* Più spazio dal tasto sopra, più vicina alla citazione sotto */
             font-weight: 400;
-            opacity: 0.8;
+            text-align: center;
         }
 
-        .bio-section { padding: 40px 20px 60px 20px; max-width: 700px; margin: 0 auto; line-height: 1.8; }
+        .bio-section { padding: 20px 20px 60px 20px; max-width: 700px; margin: 0 auto; line-height: 1.8; }
         
         .quote { 
             font-family: 'Playfair Display', serif; 
@@ -38,7 +54,7 @@
             font-size: 1.8rem; 
             color: #d4af37; 
             text-align: center; 
-            margin: 40px 0 60px 0; 
+            margin: 0 0 60px 0; /* Attaccata quasi al titolo h1 */
             line-height: 1.6; 
             letter-spacing: 1.5px; 
             display: block;
@@ -68,10 +84,7 @@
             margin-bottom: 30px; 
         }
 
-        .highlight-name {
-            color: #d4af37;
-            font-weight: 400;
-        }
+        .highlight-name { color: #d4af37; font-weight: 400; }
 
         .featured-para {
             border-left: 2px solid #d4af37; 
@@ -80,23 +93,7 @@
             color: #fff !important;
         }
 
-        .btn-style-insta { 
-            display: inline-block; 
-            font-size: 0.75rem; 
-            letter-spacing: 2px; 
-            text-decoration: none; 
-            color: #d4af37; 
-            border: 1px solid #d4af37; 
-            padding: 12px 25px; 
-            text-transform: uppercase; 
-            transition: all 0.3s ease; 
-        }
-        .btn-style-insta:hover { 
-            background-color: #d4af37; 
-            color: #1a1a1a; 
-            transform: translateY(-3px); 
-        }
-
+        /* 3 & 4 - Riordino Footer */
         .home-booster {
             margin-top: 80px;
             padding: 40px;
@@ -107,14 +104,16 @@
         @media (max-width: 600px) {
             .bio-section { padding: 30px 15px; }
             .bio-text p { text-align: left; }
-            .quote { font-size: 1.4rem; margin: 30px 0 40px 0; }
-            h1 { font-size: 1rem; }
+            .quote { font-size: 1.4rem; }
+            h1 { font-size: 2.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-home">← Torna al Sito Ufficiale</a>
+    <nav class="top-nav">
+        <a href="index.html" class="btn-style-insta">Torna alla Home Page</a>
+    </nav>
     
     <h1>Biografia</h1>
 
@@ -149,11 +148,14 @@
 
         <div class="home-booster">
             <p>Esplora il portfolio multimediale</p>
-            <a href="index.html" class="btn-style-insta">Torna alla Home Page</a>
-            <br><br>
-            <a href="https://www.instagram.com/aurora.materni.official" target="_blank" class="btn-style-insta" style="margin-top: 10px;">
-                Segui @aurora.materniofficial
+            
+            <a href="https://www.instagram.com/aurora.materniofficial" target="_blank" class="btn-style-insta">
+                Seguimi su Instagram
             </a>
+            
+            <br><br><br>
+            
+            <a href="index.html" class="btn-style-insta" style="border-color: rgba(212, 175, 55, 0.5); opacity: 0.8;">Torna alla Home Page</a>
         </div>
     </section>
 
