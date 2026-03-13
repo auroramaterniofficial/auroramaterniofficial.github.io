@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teatro - Aurora Materni Official</title>
+    <title>Teatro & Monologhi - Aurora Materni Official</title>
     
-    <meta name="description" content="Esplora la carriera teatrale di Aurora Materni. Sezione in allestimento con materiali d'archivio, locandine e foto di scena delle rappresentazioni.">
+    <meta name="description" content="Guarda le interpretazioni teatrali di Aurora Materni. Monologo sulla violenza sulle donne e materiali d'archivio della sua carriera artistica.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://auroramaterniofficial.github.io/teatro.html" />
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
+        body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; text-align: center; padding-bottom: 50px; }
         
-        .container { padding: 20px; max-width: 600px; }
+        .container { padding: 20px; max-width: 900px; width: 90%; }
         
-        /* Modificato da h2 a h1 per la SEO */
-        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.5rem; color: #d4af37; margin: 10px 0; font-weight: 400; }
+        /* Header con tasto Home in alto */
+        .header-nav { width: 100%; padding: 20px 0; margin-bottom: 20px; }
+
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.8rem; color: #d4af37; margin: 10px 0; font-weight: 400; }
         
-        .line { width: 50px; height: 1px; background-color: #d4af37; margin: 20px auto; }
+        .line { width: 60px; height: 1px; background-color: #d4af37; margin: 20px auto; }
         
-        p { font-size: 1rem; color: #ccc; letter-spacing: 1px; line-height: 1.8; margin-bottom: 40px; }
+        p.intro { font-size: 1rem; color: #ccc; letter-spacing: 1px; line-height: 1.8; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
         
-        .status-tag { font-size: 0.7rem; text-transform: uppercase; color: #d4af37; border: 1px solid #d4af37; padding: 5px 15px; border-radius: 20px; letter-spacing: 2px; }
+        /* Box Video */
+        .video-wrapper { 
+            position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #333; margin-bottom: 20px;
+        }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        .video-info { margin-top: 15px; margin-bottom: 50px; }
+        .video-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #d4af37; margin-bottom: 5px; }
+        .video-subtitle { font-size: 0.85rem; color: #888; text-transform: uppercase; letter-spacing: 2px; }
 
         .btn-back { 
             display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; 
             color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; 
-            text-transform: uppercase; transition: all 0.3s ease; margin-top: 20px;
+            text-transform: uppercase; transition: all 0.3s ease;
         }
         .btn-back:hover { background-color: #d4af37; color: #1a1a1a; }
 
-        /* Effetto sipario soft */
         .bg-gradient {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle, rgba(40,40,40,1) 0%, rgba(26,26,26,1) 100%);
@@ -42,14 +52,29 @@
 <body>
     <div class="bg-gradient"></div>
 
+    <div class="header-nav">
+        <a href="index.html" class="btn-back">Torna alla Home Page</a>
+    </div>
+
     <div class="container">
-        <span class="status-tag">In Allestimento</span>
         <h1>Teatro</h1>
         <div class="line"></div>
-        <p>Stiamo raccogliendo i materiali d'archivio, le locandine e le foto di scena. La sezione dedicata alla carriera teatrale di Aurora Materni sarà disponibile a breve.</p>
+        <p class="intro">Interpretazioni teatrali e monologhi drammatici. In questa sezione sono raccolti i lavori di ricerca espressiva e le performance di Aurora Materni.</p>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/djEBxfQ4upk" title="Monologo Violenza sulle Donne - Aurora Materni" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+            <div class="video-title">Monologo sulla violenza di genere</div>
+            <div class="video-subtitle">Interpretazione drammatica</div>
+        </div>
+
+        <div class="line"></div>
+        <p style="font-size: 0.8rem; color: #666;">Altro materiale d'archivio e foto di scena sono in fase di caricamento.</p>
         
         <a href="index.html" class="btn-back">Torna alla Home Page</a>
     </div>
 
 </body>
 </html>
+
