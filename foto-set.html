@@ -93,7 +93,7 @@
 
     <div class="gallery-grid">
         
-        <div class="gallery-item" onclick="openLightbox('https://img.youtube.com/vi/AjMvH6RE_C8/maxresdefault.jpg', 'Dietro le quinte: Guarda il nuovo Shorts su YouTube! <br><a href=\'https://youtube.com/shorts/AjMvH6RE_C8\' target=\'_blank\'>Clicca qui per vedere il video</a>')">
+        <div class="gallery-item" onclick="window.open('https://youtube.com/shorts/AjMvH6RE_C8', '_blank')">
             <img src="https://img.youtube.com/vi/AjMvH6RE_C8/maxresdefault.jpg" alt="Aurora Materni Shorts Dietro le quinte - Anteprima Video">
             <div class="play-icon"></div>
         </div>
@@ -146,7 +146,6 @@
         }
         
         function closeLightbox(event) {
-            // Evita di chiudere la lightbox se si clicca sul link al video YouTube
             if(event && event.target.tagName.toLowerCase() === 'a') return;
             
             const lb = document.getElementById('lightbox');
