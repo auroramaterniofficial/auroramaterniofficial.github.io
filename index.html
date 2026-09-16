@@ -61,6 +61,7 @@
             position: relative;
             padding: 0 20px;
         }
+
         .welcome-text::after {
             content: "";
             display: block;
@@ -70,41 +71,145 @@
             margin: 20px auto 0;
         }
 
-        .nav-links { display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 40px; max-width: 95%; }
-        .nav-item { text-decoration: none; color: #f4f1ea; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; border-bottom: 1px solid transparent; }
-        .nav-item:hover { color: #d4af37; border-bottom: 1px solid #d4af37; }
-        .divider { width: 1px; height: 15px; background-color: #d4af37; opacity: 0.5; }
-        
-        .instagram-btn { display: inline-block; font-size: 0.75rem; letter-spacing: 2px; text-decoration: none; color: #d4af37; border: 1px solid #d4af37; padding: 12px 25px; text-transform: uppercase; transition: all 0.3s ease; }
-        .instagram-btn:hover { background-color: #d4af37; color: #1a1a1a; transform: translateY(-3px); }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            max-width: 95%;
+        }
 
-        footer { padding: 40px 20px; text-align: center; font-size: 0.8rem; color: #888; background-color: #121212; border-top: 1px solid #222; }
-        .agency-label { color: #d4af37; letter-spacing: 2px; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 15px; display: block; font-weight: 400; }
-        .seo-note { max-width: 800px; margin: 0 auto; line-height: 1.6; opacity: 0.6; }
+        .nav-item {
+            text-decoration: none;
+            color: #f4f1ea;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .nav-item:hover {
+            color: #d4af37;
+            border-bottom: 1px solid #d4af37;
+        }
+
+        .divider {
+            width: 1px;
+            height: 15px;
+            background-color: #d4af37;
+            opacity: 0.5;
+        }
+        
+        .instagram-btn {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            padding: 12px 25px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-btn:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            background-color: #121212;
+            border-top: 1px solid #222;
+        }
+
+        .agency-label {
+            color: #d4af37;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: 400;
+        }
+
+        .seo-note {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            opacity: 0.6;
+        }
         
         @media (max-width: 768px) { 
-            header { border-width: 10px; padding: 40px 20px; height: auto; } 
-            .profile-photo img { width: 280px; height: 380px; } 
-            .official-label { font-size: 0.6rem; letter-spacing: 3px; }
-            h1 { font-size: 3rem; } 
-            .subtitle { font-size: 1.2rem; } 
-            .welcome-text { font-size: 1rem; }
-            .nav-links { gap: 10px; } 
-            .divider { display: none; } 
-            .nav-item { font-size: 0.75rem; letter-spacing: 1px; border: 1px solid #333; padding: 5px 10px; border-radius: 3px; }
+            header {
+                border-width: 10px;
+                padding: 40px 20px;
+                height: auto;
+            }
+
+            .profile-photo img {
+                width: 280px;
+                height: 380px;
+            }
+
+            .official-label {
+                font-size: 0.6rem;
+                letter-spacing: 3px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .welcome-text {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .divider {
+                display: none;
+            }
+
+            .nav-item {
+                font-size: 0.75rem;
+                letter-spacing: 1px;
+                border: 1px solid #333;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <header>
+
         <div class="profile-photo">
             <img src="foto-attrice.webp" alt="Aurora Materni attrice bambina 12 anni Roma capelli ricci casting cinema Rai 1 Genius Management">
         </div>
 
         <div class="official-label">Official Website</div>
 
-        <h1><span style="color: #d4af37;">A</span>urora <span style="color: #d4af37;">M</span>aterni</h1>
+        <h1>
+            <span style="color: #d4af37;">A</span>urora
+            <span style="color: #d4af37;">M</span>aterni
+        </h1>
+
         <div class="subtitle">Attrice e Interprete</div>
 
         <div class="welcome-text">
@@ -115,37 +220,62 @@
         </div>
 
         <nav class="nav-links">
+
             <a href="biografia.html" class="nav-item">Biografia</a>
+
             <div class="divider"></div>
+
             <a href="photobook.html" class="nav-item">Photobook</a>
+
             <div class="divider"></div>
+
             <a href="video.html" class="nav-item">Video & Showreel</a>
+
             <div class="divider"></div>
+
             <a href="foto-set.html" class="nav-item">Foto Set</a>
+
             <div class="divider"></div>
+
             <a href="teatro.html" class="nav-item">Teatro</a>
+
             <div class="divider"></div>
+
+            <a href="diario-backstage.html" class="nav-item">Diario & Backstage</a>
+
+            <div class="divider"></div>
+
             <a href="curriculum.html" class="nav-item">Curriculum</a>
+
             <div class="divider"></div>
+
             <a href="contatti.html" class="nav-item">Contatti</a>
+
         </nav>
 
         <a href="https://www.instagram.com/aurora.materni.official" target="_blank" class="instagram-btn">
             Instagram Official
         </a>
+
     </header>
 
     <footer>
-        <span class="agency-label">Rappresentanza Artistica: Genius Management di Eugenio Piovosa</span>
+
+        <span class="agency-label">
+            Rappresentanza Artistica: Genius Management di Eugenio Piovosa
+        </span>
+
         <div class="seo-note">
             <strong>Aurora Materni</strong>: Attrice per Cinema, TV e Teatro. <br>
-            Specializzata in ruoli per minori a Roma. Formazione Teatro a Vista. <br> Capelli Ricci Castani. <br>
+            Specializzata in ruoli per minori a Roma. Formazione Teatro a Vista. <br>
+            Capelli Ricci Castani. <br>
             © 2026 Aurora Materni - All Rights Reserved.
         </div>
+
     </footer>
+
 </body>
 </html>
-
 
 
 
