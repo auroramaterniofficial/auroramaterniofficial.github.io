@@ -1,164 +1,551 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfolio Aurora Materni | Headshots Casting | Genius Management</title>
-    
-    <meta name="description" content="Portfolio fotografico ufficiale di Aurora Materni (Genius Management). Headshots casting cinema e scatti d'autore del progetto Roma Codex di Albert Watson.">
+
+    <title>Photobook Aurora Materni | Portfolio, Headshots e Roma Codex</title>
+
+    <link rel="canonical"
+          href="https://auroramaterniofficial.github.io/photobook.html">
+
+    <meta name="description"
+          content="Photobook e portfolio fotografico ufficiale di Aurora Materni: headshots per cinema e TV, ritratti professionali e immagini del progetto Roma Codex di Albert Watson.">
+
+    <meta name="keywords"
+          content="Aurora Materni photobook, Aurora Materni portfolio, headshot attrice Roma, portfolio attrice, book fotografico attrice, casting cinema Roma, Roma Codex, Albert Watson, Genius Management">
+
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://auroramaterniofficial.github.io/photobook.html" />
+    <meta name="author" content="Aurora Materni">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+          content="https://auroramaterniofficial.github.io/photobook.html">
+
+    <meta property="og:site_name"
+          content="Aurora Materni Official">
+
+    <meta property="og:locale"
+          content="it_IT">
+
+    <meta property="og:title"
+          content="Photobook Aurora Materni | Portfolio e Headshots">
+
+    <meta property="og:description"
+          content="Portfolio fotografico ufficiale di Aurora Materni con headshots, ritratti e immagini legate al progetto Roma Codex di Albert Watson.">
+
+    <meta property="og:image"
+          content="https://auroramaterniofficial.github.io/foto1.webp">
+
+    <meta property="og:image:alt"
+          content="Ritratto di Aurora Materni dal portfolio fotografico ufficiale">
+
+    <!-- SOCIAL CARD -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Photobook Aurora Materni | Portfolio">
+
+    <meta name="twitter:description"
+          content="Headshots, ritratti e portfolio fotografico ufficiale di Aurora Materni.">
+
+    <meta name="twitter:image"
+          content="https://auroramaterniofficial.github.io/foto1.webp">
+
+    <!-- DATI STRUTTURATI -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://auroramaterniofficial.github.io/photobook.html#webpage",
+          "url": "https://auroramaterniofficial.github.io/photobook.html",
+          "name": "Photobook e portfolio fotografico di Aurora Materni",
+          "description": "Raccolta ufficiale di headshots, ritratti e fotografie professionali di Aurora Materni.",
+          "inLanguage": "it-IT",
+          "isPartOf": {
+            "@id": "https://auroramaterniofficial.github.io/#website"
+          },
+          "about": {
+            "@id": "https://auroramaterniofficial.github.io/#aurora-materni"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://auroramaterniofficial.github.io/#website",
+          "url": "https://auroramaterniofficial.github.io/",
+          "name": "Aurora Materni Official",
+          "alternateName": "Aurora Materni"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://auroramaterniofficial.github.io/#aurora-materni",
+          "name": "Aurora Materni",
+          "url": "https://auroramaterniofficial.github.io/",
+          "image": "https://auroramaterniofficial.github.io/foto-attrice.webp",
+          "jobTitle": "Attrice",
+          "description": "Attrice e interprete residente a Roma, rappresentata da Genius Management.",
+          "sameAs": [
+            "https://www.instagram.com/aurora.materni.official",
+            "https://www.tiktok.com/@aurora.materni",
+            "https://www.youtube.com/@AuroraMaterniOfficial"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap"
+          rel="stylesheet">
+
     <style>
-        body { margin: 0; background-color: #1a1a1a; color: #f4f1ea; font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; }
-        
-        .back-home { 
-            margin-top: 50px; 
-            text-decoration: none; 
-            color: #d4af37; 
-            font-size: 0.8rem; 
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-            border-bottom: 1px solid transparent; 
-            transition: 0.3s; 
-        }
-        .back-home:hover { border-bottom: 1px solid #d4af37; }
-        
-        /* Titolo con spaziatura ampia e senza riga agenzia sotto */
-        h1 { 
-            font-family: 'Playfair Display', serif; 
-            font-style: italic; 
-            font-size: 3rem; 
-            color: #d4af37; 
-            margin: 60px 0 30px 0; 
-            font-weight: 400; 
-            text-align: center; 
-            letter-spacing: 5px; 
+
+        body {
+            margin: 0;
+            background-color: #1a1a1a;
+            color: #f4f1ea;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .seo-subtext { 
-            text-align: center; 
-            color: #888; 
-            font-size: 0.9rem; 
-            max-width: 600px; 
-            margin: 0 auto 50px; 
-            line-height: 1.6; 
+        .back-home {
+            margin-top: 50px;
+            text-decoration: none;
+            color: #d4af37;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            border-bottom: 1px solid #d4af37;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 3rem;
+            color: #d4af37;
+            margin: 60px 0 30px 0;
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .seo-subtext {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
             padding: 0 20px;
             letter-spacing: 0.5px;
         }
-        
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1100px; padding-bottom: 40px; }
-        .book-item { position: relative; background-color: #121212; overflow: hidden; aspect-ratio: 1/1; border: 1px solid #222; cursor: pointer; }
-        .special-frame { border: 1px solid #d4af37 !important; }
-        
-        .book-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: 0.5s ease; }
-        .book-item:hover img { filter: grayscale(0%); transform: scale(1.05); }
 
-        /* Tasto CTA Video (Stile Outline) */
-        .cta-cinema { text-align: center; margin: 60px 0 100px 0; }
-        
-        .cta-button { 
-            text-decoration: none; 
-            color: #d4af37; 
-            border: 1px solid #d4af37; 
-            padding: 15px 35px; 
-            font-size: 0.75rem; 
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-            transition: all 0.3s ease; 
-            display: inline-block; 
+        .roma-codex-link {
+            text-align: center;
+            margin: 0 auto 50px;
+            padding: 0 20px;
         }
-        
-        .cta-button:hover { 
-            background-color: #d4af37; 
-            color: #1a1a1a; 
-            transform: translateY(-3px); 
+
+        .text-link {
+            color: #d4af37;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+            transition: 0.3s ease;
+        }
+
+        .text-link:hover {
+            border-bottom-color: #d4af37;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 1100px;
+            padding-bottom: 40px;
+        }
+
+        .book-item {
+            position: relative;
+            background-color: #121212;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            border: 1px solid #222;
+            cursor: pointer;
+        }
+
+        .special-frame {
+            border: 1px solid #d4af37 !important;
+        }
+
+        .book-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+        }
+
+        .book-item:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .cta-cinema {
+            text-align: center;
+            margin: 60px 0 40px 0;
+            padding: 0 20px;
+        }
+
+        .cta-button {
+            text-decoration: none;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            padding: 15px 35px;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            transform: translateY(-3px);
+        }
+
+        .internal-navigation {
+            text-align: center;
+            margin: 30px 0 100px 0;
+            width: 90%;
+            max-width: 850px;
+        }
+
+        .internal-navigation p {
+            margin-bottom: 25px;
+            font-size: 0.8rem;
+            color: #888;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .internal-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         /* LIGHTBOX */
-        #lightbox { display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.98); justify-content: center; align-items: center; cursor: pointer; }
-        #lightbox img { max-width: 90%; max-height: 80%; border: 1px solid #d4af37; box-shadow: 0 0 50px rgba(0,0,0,0.8); cursor: default; }
-        .lightbox-caption { position: absolute; bottom: 40px; color: #d4af37; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; text-align: center; width: 100%; }
-        .close-lightbox { position: absolute; top: 20px; right: 30px; color: #d4af37; font-size: 40px; font-weight: 300; cursor: pointer; z-index: 1001; }
+        #lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.98);
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border: 1px solid #d4af37;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            cursor: default;
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 40px;
+            color: #d4af37;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #d4af37;
+            font-size: 40px;
+            font-weight: 300;
+            cursor: pointer;
+            z-index: 1001;
+        }
 
         @media (max-width: 768px) {
-            .book-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            h1 { font-size: 2.2rem; letter-spacing: 3px; margin-top: 50px; }
-            .book-item img { filter: grayscale(0%); }
+
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+                letter-spacing: 3px;
+                margin-top: 50px;
+            }
+
+            .book-item img {
+                filter: grayscale(0%);
+            }
+
+            .internal-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .lightbox-caption {
+                font-size: 0.7rem;
+                bottom: 25px;
+            }
         }
+
     </style>
+
 </head>
+
 <body>
 
-    <a href="index.html" class="back-home">← Torna alla Home</a>
-    
+    <a href="index.html"
+       class="back-home">
+        ← Torna alla Home
+    </a>
+
+
     <h1>Portfolio & Headshots</h1>
-    
+
+
     <p class="seo-subtext">
-        Materiale fotografico ufficiale ad uso casting. Include gli scatti artistici di <strong>Albert Watson</strong> (Roma Codex) e headshots professionali per produzioni Cinema e TV.
+        Photobook e materiale fotografico ufficiale di
+        <strong>Aurora Materni</strong>,
+        con headshots e ritratti per produzioni cinematografiche e televisive.
+        La raccolta comprende anche immagini legate al progetto
+        <strong>Roma Codex</strong> di
+        <strong>Albert Watson</strong>.
     </p>
-    
-    <div class="book-grid">
-        <div class="book-item special-frame" onclick="openLightbox('watson-mostra.jpg', 'Albert Watson Exhibition - Progetto Roma Codex - Fine Art Print')">
-            <img src="watson-mostra.jpg" alt="Aurora Materni ritratto artistico Albert Watson Roma Codex Villa Medici">
-        </div>
 
-        <div class="book-item special-frame" onclick="openLightbox('watson-backstage.jpeg', 'Behind the Scenes: Aurora Materni sul set del leggendario Albert Watson')">
-            <img src="watson-backstage.jpeg" alt="Backstage Albert Watson e Aurora Materni set fotografico Roma Villa Medici">
-        </div>
 
-        <div class="book-item" onclick="openLightbox('foto1.webp', 'Headshot Professionale - Studio Series')">
-            <img src="foto1.webp" alt="Aurora Materni attrice headshot casting cinema e TV">
-        </div>
+    <div class="roma-codex-link">
 
-        <div class="book-item" onclick="openLightbox('foto2.webp', 'Portrait Series - Espressività per il grande schermo')">
-            <img src="foto2.webp" alt="Aurora Materni portfolio attrice primo piano casting professionale">
-        </div>
+        <a href="backstage/roma-codex-albert-watson.html"
+           class="text-link">
+            Scopri il backstage di Roma Codex e l'esperienza con Albert Watson →
+        </a>
 
-        <div class="book-item" onclick="openLightbox('foto3.webp', 'Editorial Portrait - Studio Photography')">
-            <img src="foto3.webp" alt="Aurora Materni attrice bilingue casting cinema Roma">
-        </div>
-
-        <div class="book-item" onclick="openLightbox('foto4.webp', 'Portrait - Aurora Materni')">
-            <img src="foto4.webp" alt="Aurora Materni book fotografico attrice cinema">
-        </div>
-
-        <div class="book-item" onclick="openLightbox('foto5.webp', 'Professional Headshot - Aurora Materni Portrait')">
-            <img src="foto5.webp" alt="Aurora Materni headshot professionale attrice giacca nera casting">
-        </div>
-
-        <div class="book-item" onclick="openLightbox('foto6.webp', 'Book Fotografico - Piano americano')">
-            <img src="foto6.webp" alt="Aurora Materni attrice professionista posa cinema">
-        </div>
     </div>
+
+
+    <main class="book-grid">
+
+        <div class="book-item special-frame"
+             onclick="openLightbox('watson-mostra.jpg', 'Roma Codex - fotografia esposta nella mostra di Albert Watson')">
+
+            <img src="watson-mostra.jpg"
+                 alt="Aurora Materni nel progetto fotografico Roma Codex di Albert Watson"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item special-frame"
+             onclick="openLightbox('watson-backstage.jpeg', 'Backstage del progetto Roma Codex')">
+
+            <img src="watson-backstage.jpeg"
+                 alt="Backstage di Aurora Materni durante il progetto Roma Codex"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto1.webp', 'Headshot professionale - Studio Series')">
+
+            <img src="foto1.webp"
+                 alt="Headshot professionale di Aurora Materni"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto2.webp', 'Portrait Series - Aurora Materni')">
+
+            <img src="foto2.webp"
+                 alt="Ritratto professionale di Aurora Materni per portfolio artistico"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto3.webp', 'Editorial Portrait - Studio Photography')">
+
+            <img src="foto3.webp"
+                 alt="Aurora Materni in un ritratto fotografico da studio"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto4.webp', 'Portrait - Aurora Materni')">
+
+            <img src="foto4.webp"
+                 alt="Aurora Materni nel suo book fotografico"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto5.webp', 'Professional Headshot - Aurora Materni')">
+
+            <img src="foto5.webp"
+                 alt="Headshot di Aurora Materni per cinema e televisione"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+
+        <div class="book-item"
+             onclick="openLightbox('foto6.webp', 'Book Fotografico - Piano americano')">
+
+            <img src="foto6.webp"
+                 alt="Aurora Materni in una fotografia del portfolio professionale"
+                 loading="lazy"
+                 decoding="async">
+
+        </div>
+
+    </main>
+
 
     <div class="cta-cinema">
-        <a href="video.html" class="cta-button">Guarda le Clip Video / Showreel →</a>
+
+        <a href="video.html"
+           class="cta-button">
+            Guarda le Clip Video / Showreel →
+        </a>
+
     </div>
 
-    <div id="lightbox" onclick="closeLightbox()">
-        <span class="close-lightbox">&times;</span>
-        <img id="lightbox-img" src="" alt="Ingrandimento Portfolio Aurora Materni">
-        <div id="lightbox-caption" class="lightbox-caption"></div>
+
+    <div class="internal-navigation">
+
+        <p>Scopri anche</p>
+
+        <div class="internal-links">
+
+            <a href="biografia.html"
+               class="cta-button">
+                Biografia
+            </a>
+
+            <a href="curriculum.html"
+               class="cta-button">
+                Curriculum
+            </a>
+
+            <a href="diario-backstage.html"
+               class="cta-button">
+                Diario & Backstage
+            </a>
+
+        </div>
+
     </div>
+
+
+    <div id="lightbox"
+         onclick="closeLightbox()">
+
+        <span class="close-lightbox">
+            &times;
+        </span>
+
+        <img id="lightbox-img"
+             src=""
+             alt="Ingrandimento del portfolio fotografico di Aurora Materni">
+
+        <div id="lightbox-caption"
+             class="lightbox-caption">
+        </div>
+
+    </div>
+
 
     <script>
+
         function openLightbox(imageSrc, text) {
+
             document.getElementById('lightbox-img').src = imageSrc;
-            document.getElementById('lightbox-caption').innerHTML = text;
+
+            document.getElementById('lightbox-caption').textContent = text;
+
             document.getElementById('lightbox').style.display = 'flex';
+
             document.body.style.overflow = 'hidden';
+
         }
 
+
         function closeLightbox() {
+
             document.getElementById('lightbox').style.display = 'none';
+
+            document.getElementById('lightbox-img').src = '';
+
             document.body.style.overflow = 'auto';
+
         }
+
+
+        document.addEventListener('keydown', function(event) {
+
+            if (event.key === 'Escape') {
+
+                closeLightbox();
+
+            }
+
+        });
+
     </script>
 
 </body>
+
 </html>
 
 
